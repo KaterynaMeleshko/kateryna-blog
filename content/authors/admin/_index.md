@@ -42,23 +42,23 @@ interests:
 education:
   - area: Secondary school
     institution: School 107, Zaporizhzhia
-    date_start: Aug. 2011
+    date_start: Aug 2011
     date_end: June 2020
   - area: High school
     institution: Mathematics Lyceum
-    date_start: Aug. 2020
+    date_start: Aug 2020
     date_end: June 2023
   - area: Integrational year
     institution: Universität Bern
-    date_start: Aug. 2023
+    date_start: Aug 2023
     date_end: June 2024
   - area: Started bachelor
     institution: Universität Bern
-    date_start: Aug. 2024
+    date_start: Aug 2024
     date_end: June 2025
   - area: PiBS
     institution: FFHS 
-    date_start: Aug. 2025
+    date_start: Aug 2025
     date_end: Present
 work:
   - position: PiBS student
