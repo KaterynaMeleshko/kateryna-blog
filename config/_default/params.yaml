@@ -6,7 +6,7 @@
 # Appearance
 appearance:
   mode: system
-  color: black
+  color: zink
 
 # SEO
 marketing:
@@ -35,8 +35,7 @@ header:
     fixed_to_top: true
     show_search: true
     show_theme_chooser: true
-    logo:
-      text: "My profile"
+    logo:text: "My profile"
 
 # Site footer
 footer:
