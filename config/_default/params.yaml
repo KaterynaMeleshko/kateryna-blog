@@ -31,11 +31,12 @@ header:
   navbar:
     enable: true
     blox: "navbar"
+    align: "left"
     fixed_to_top: true
     show_search: true
     show_theme_chooser: true
     logo:
-      text: "Your Name"
+      text: "My profile"
 
 # Site footer
 footer:
