@@ -42,31 +42,33 @@ interests:
 education:
   - area: Secondary school
     institution: School 107, Zaporizhzhia
-    {{ .date_start }} Aug 2011
-    {{ .date_end }}  June 2020
+    date_start: 2011-08-01
+    date_end: 2020-06-01
   - area: High school
     institution: Mathematics Lyceum
-    {{ .date_start }} Aug 2020
-    {{ .date_end }}  June 2023
+    date_start: 2020-08-01
+    date_end: 2023-06-01
   - area: Integrational year
     institution: Universität Bern
-    {{ .date_start }} Aug 2023
-    {{ .date_end }}  June 2024
+    date_start: 2023-08-01
+    date_end: 2024-06-01
   - area: Started bachelor
     institution: Universität Bern
-    {{ .date_start }} Aug 2024
-    {{ .date_end }}  June 2025
+    date_start: 2024-08-01
+    date_end: 2025-06-01
   - area: PiBS
     institution: FFHS 
-    {{ .date_start }} Aug 2025
-    {{ .date_end }} Present
+    date_start: 2025-08-01
+    date_end: Present
+
 work:
   - position: PiBS student
     company_name: Axians Amanox
     company_url: axians.ch
-    date_start: Aug. 2025
+    date_start: 2025-08-01
     date_end: Present
-    summary: 
+    summary: ''
+
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
 skills:
@@ -109,4 +111,4 @@ languages:
 ---
 ## About Me
 
-Chien Shiung Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+I am a student and have recently started the PiBS program in the field of computer science. At this stage, I am actively familiarizing myself with modern technologies and practical aspects of working in IT, striving to develop professional skills and deepen theoretical knowledge.
