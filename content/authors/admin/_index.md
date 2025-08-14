@@ -22,9 +22,9 @@ role: PiBS student
 # Organizations/Affiliations to display in Biography blox
 organizations:
   - name: Axians Amanox
-    url: amanox.ch
+    url: https://www.amanox.ch/de/
   - name: FFHS
-    url: ffhs.ch
+    url: https://www.ffhs.ch/de?gad_source=1&gad_campaignid=19729114204
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
