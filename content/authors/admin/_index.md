@@ -59,15 +59,16 @@ education:
   - area: PiBS
     institution: FFHS 
     date_start: 2025-08-01
-    date_end: Present
+    date_end: 2029-06-01
+    date_end_display: Present
 
 work:
   - position: PiBS student
     company_name: Axians Amanox
     company_url: axians.ch
     date_start: 2025-08-01
-    date_end: Present
-    summary: ''
+    date_end: 2029-06-01
+    date_end_display: Present
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
