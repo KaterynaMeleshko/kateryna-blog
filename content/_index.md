@@ -11,27 +11,24 @@ design:
 sections:
   - block: resume-biography-3
     content:
-      # Choose a user profile to display (a folder name within `content/authors/`)
       username: admin
       text: ""
-      # Show a call-to-action button under your biography? (optional)
     design:
       css_class: dark
       background:
         color: black
         image:
-          # Add your image background to `assets/media/`.
           filename: stacked-peaks.svg
           size: cover
           position: center
+      columns: '1'
 
-      - block: markdown
+  - block: markdown
     content:
       title: 'Purpose of this blog'
       subtitle: ''
       text: |-
-      This blog will be used for weekly reports to track progress and self-reflection, as well as for documenting modules and related work.
-        
+        This blog will be used for weekly reports to track progress and self-reflection, as well as for documenting modules and related work.
     design:
       columns: '1'
 
