@@ -14,7 +14,7 @@ sections:
       text: ""
     design:
       css_class: dark
-      color: red
+      color:
       background:
         image:
           filename: stacked-peaks.svg
