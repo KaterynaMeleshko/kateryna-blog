@@ -6,7 +6,7 @@
 # Appearance
 appearance:
   mode: system
-  color: red
+  color: black
 
 # SEO
 marketing:
@@ -31,11 +31,12 @@ header:
   navbar:
     enable: true
     blox: "navbar"
-    align: "center"
+    align: "left"
     fixed_to_top: true
     show_search: true
     show_theme_chooser: true
-    logo:text: "My profile"
+    logo:
+      text: "My profile"
 
 # Site footer
 footer:

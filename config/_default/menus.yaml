@@ -8,12 +8,9 @@ main:
     url: /
     weight: 10
   - name: Weekly reports
-    url: /#reports
+    url: reports/
     weight: 12
-  - name: Experience
-    url: /#experience
-    weight: 11
-  - name: modules
-    url: /#modules
+  - name: Modules
+    url: modules/
     weight: 13
 
