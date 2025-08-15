@@ -7,10 +7,7 @@
 appearance:
   mode: system
   color:
-    primary: "#4a90e2"
-    secondary: "#f5f5f5"
-    background: "#ffffff"
-    text: "#333333"
+
 
 # Site header
 header:
