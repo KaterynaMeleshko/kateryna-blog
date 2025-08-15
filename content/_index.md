@@ -21,7 +21,7 @@ sections:
     design:
       css_class: dark
       background:
-        color: zinc
+        color: black
         image:
           # Add your image background to `assets/media/`.
           filename: stacked-peaks.svg
@@ -30,7 +30,7 @@ sections:
           size: cover
           position: center
           parallax: false
-          columns: '1'
+          
 
       - block: markdown
     content:
