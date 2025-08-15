@@ -30,8 +30,7 @@ sections:
           size: cover
           position: center
           parallax: false
-    design:
-      columns: '1'
+          columns: '1'
 
       - block: markdown
     content:
