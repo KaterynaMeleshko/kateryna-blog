@@ -1,7 +1,7 @@
 # Appearance
 appearance:
-  mode: light       # используем светлую тему по умолчанию
-  color: "#4A90E2" # основной цвет — красивый синий
+  mode: dark
+  color: blue
 
 # Site header
 header:
@@ -12,7 +12,7 @@ header:
     fixed_to_top: true
     show_search: true
     show_theme_chooser: true
-    color: "#4A90E2"
+    color: zinc
     logo:
       text: "Kateryna's Blog"
       font_family: "Helvetica, Arial, sans-serif"
