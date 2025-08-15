@@ -29,8 +29,6 @@ sections:
             brightness: 1.0
           size: cover
           position: center
-          parallax: false
-          
 
       - block: markdown
     content:
