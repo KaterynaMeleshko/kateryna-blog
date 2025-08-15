@@ -5,4 +5,3 @@ weight: 1
 ---
 
 Here is gonna be weekly report 1.
-
