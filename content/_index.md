@@ -1,11 +1,12 @@
 ---
-# Leave the homepage title empty to use the site title
 title: ""
 date: 2022-10-24
 type: landing
 
 design:
   spacing: "3rem"
+  font_family: "Helvetica, Arial, sans-serif"
+  font_size: "1rem"
 
 sections:
   - block: resume-biography-3
@@ -14,25 +15,31 @@ sections:
       text: ""
     design:
       css_class: dark
-      color:
+      color: red
       background:
         image:
           filename: stacked-peaks.svg
           size: cover
           position: center
+      text_align: center
 
   - block: collection
     id: reports
     content:
-      title: Weekly reports
+      title: Weekly Reports
       count: 2
       filters:
         folders:
           - reports
         featured_only: false
     design:
-      view: article-grid
+      view: card-grid  
       columns: 2
+      card:
+        shadow: true
+        hover_effect: lift
+        border_radius: "0.5rem"
+        padding: "1rem"
 
   - block: collection
     id: modules
@@ -43,6 +50,11 @@ sections:
           - modules
         featured_only: false
     design:
-      view: article-grid
+      view: card-grid
       columns: 2
+      card:
+        shadow: true
+        hover_effect: lift
+        border_radius: "0.5rem"
+        padding: "1rem"
 ---

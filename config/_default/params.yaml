@@ -1,7 +1,7 @@
 # Appearance
 appearance:
   mode: dark
-  color: blue
+  color: red
 
 # Site header
 header:
