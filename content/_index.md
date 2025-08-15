@@ -15,7 +15,7 @@ sections:
     design:
       css_class: dark
       background:
-        color: black
+        color: red
         image:
           filename: stacked-peaks.svg
           size: cover
