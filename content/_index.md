@@ -5,7 +5,7 @@ date: 2022-10-24
 type: landing
 
 design:
-  spacing: "6rem"
+  spacing: "3rem"
 
 sections:
   - block: resume-biography-3
@@ -29,7 +29,7 @@ sections:
       filters:
         folders:
           - reports
-        featured_only: true
+        featured_only: false
     design:
       view: article-grid
       columns: 2
@@ -41,7 +41,7 @@ sections:
       filters:
         folders:
           - modules
-        featured_only: true
+        featured_only: false
     design:
       view: article-grid
       columns: 2
