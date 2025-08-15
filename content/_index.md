@@ -5,7 +5,6 @@ date: 2022-10-24
 type: landing
 
 design:
-  # Default section spacing
   spacing: "6rem"
 
 sections:
@@ -31,7 +30,6 @@ sections:
     design:
       columns: '1'
 
-
   - block: collection
     id: reports
     content:
@@ -46,7 +44,7 @@ sections:
       view: article-grid
       columns: 2
 
-    - block: collection
+  - block: collection
     id: modules
     content:
       title: Modules
@@ -57,3 +55,4 @@ sections:
     design:
       view: article-grid
       columns: 2
+---
