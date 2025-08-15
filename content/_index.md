@@ -14,6 +14,7 @@ sections:
       text: ""
     design:
       css_class: dark
+      color: ocean
       background:
         image:
           filename: stacked-peaks.svg
