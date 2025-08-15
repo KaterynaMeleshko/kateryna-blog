@@ -33,7 +33,6 @@ sections:
     design:
       view: article-grid
       columns: 2
-      position: center
 
   - block: collection
     id: modules
@@ -46,5 +45,4 @@ sections:
     design:
       view: article-grid
       columns: 2
-      position: center
 ---
