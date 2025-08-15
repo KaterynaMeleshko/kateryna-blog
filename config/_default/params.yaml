@@ -1,13 +1,7 @@
-# SITE SETUP
-# Guide: https://docs.hugoblox.com/tutorial/
-# Documentation: https://docs.hugoblox.com/
-# This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
-
 # Appearance
 appearance:
-  mode: system
-  color: red
-
+  mode: light       # используем светлую тему по умолчанию
+  color: "#4A90E2" # основной цвет — красивый синий
 
 # Site header
 header:
@@ -18,19 +12,12 @@ header:
     fixed_to_top: true
     show_search: true
     show_theme_chooser: true
-    color: red
+    color: "#4A90E2"
     logo:
-      text: "My profile"
-
-# Site footer
-#footer:
-#  copyright:
-#    notice: '© {year} Me. This work is licensed under {license}'
-#   license:
-#     enable: true
-#     allow_derivatives: false
-#      share_alike: true
-#     allow_commercial: false
+      text: "Kateryna's Blog"
+      font_family: "Helvetica, Arial, sans-serif"
+      font_weight: "bold"
+      font_size: "1.5rem"
 
 # Localization
 locale:
@@ -40,6 +27,6 @@ locale:
 # Site features
 features:
   math:
-    enable: false
+    enable: true
   privacy_pack:
-    enable: false
+    enable: true
