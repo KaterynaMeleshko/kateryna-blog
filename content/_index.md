@@ -15,13 +15,13 @@ sections:
       username: admin
       text: ""
       # Show a call-to-action button under your biography? (optional)
-      button:
-        text: Download CV
-        url: uploads/resume.pdf
+      #button:
+      # text: Download CV
+      # url: uploads/resume.pdf
     design:
       css_class: dark
       background:
-        color: black
+        color: zinc
         image:
           # Add your image background to `assets/media/`.
           filename: stacked-peaks.svg
@@ -30,25 +30,25 @@ sections:
           size: cover
           position: center
           parallax: false
-  - block: markdown
-    content:
-      title: '📚 My Research'
-      subtitle: ''
-      text: |-
-        Use this area to speak to your mission. I'm a research scientist in the Moonshot team at DeepMind. I blog about machine learning, deep learning, and moonshots.
-
-        I apply a range of qualitative and quantitative methods to comprehensively investigate the role of science and technology in the economy.
-        
-        Please reach out to collaborate 😃
     design:
       columns: '1'
-  - block: collection
-    id: papers
+
+      - block: markdown
     content:
-      title: Featured Publications
+      title: 'Purpose of this blog'
+      subtitle: ''
+      text: This blog will be used for weekly reports to track progress and self-reflection, as well as for documenting modules and related work.|-
+        
+    design:
+      columns: '1'
+
+  - block: collection
+    id: reports
+    content:
+      title: Weekly reports
       filters:
         folders:
-          - publication
+          - project
         featured_only: true
     design:
       view: article-grid
@@ -63,16 +63,6 @@ sections:
         exclude_featured: false
     design:
       view: citation
-  - block: collection
-    id: talks
-    content:
-      title: Recent & Upcoming Talks
-      filters:
-        folders:
-          - event
-    design:
-      view: article-grid
-      columns: 1
   - block: collection
     id: news
     content:
