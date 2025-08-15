@@ -1,10 +1,10 @@
 ---
 # Display name
-title: PiBS student
+title: Blog
 
 # Full name (for SEO)
 first_name: Kateryna
-last_name: Mekeshko
+last_name: Meleshko
 
 # Status emoji
 status:
