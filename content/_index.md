@@ -18,7 +18,7 @@ sections:
       background:
         color: black
         image:
-          filename: stacked-peaks.svg
+          filename: peaks.svg
           size: cover
           position: center
       columns: '1'
