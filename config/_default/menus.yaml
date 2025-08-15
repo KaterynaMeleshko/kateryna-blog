@@ -4,13 +4,10 @@
   #   The weight parameter defines the order that the links will appear in.
 
 main:
-  - name: General
-    url: /
-    weight: 10
   - name: Weekly reports
     url: reports/
-    weight: 12
+    weight: 1
   - name: Modules
     url: modules/
-    weight: 13
+    weight: 2
 

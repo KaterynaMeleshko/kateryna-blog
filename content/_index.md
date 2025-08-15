@@ -21,21 +21,11 @@ sections:
           size: cover
           position: center
 
-  - block: markdown
-    content:
-      title: 'Purpose of this blog'
-      subtitle: ''
-      text: |-
-        This blog will be used for weekly reports to track progress and self-reflection, as well as for documenting modules and related work.
-    design:
-      columns: '1'
-
   - block: collection
     id: reports
     content:
       title: Weekly reports
       count: 2
-      order: desc
       filters:
         folders:
           - reports
