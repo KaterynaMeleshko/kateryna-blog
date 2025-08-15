@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Blog
+title: Kateryna's Blog
 
 # Full name (for SEO)
 first_name: Kateryna
