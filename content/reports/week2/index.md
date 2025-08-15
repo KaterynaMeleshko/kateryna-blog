@@ -1,6 +1,6 @@
 ---
 title: Week 2
-date: 
+date: 2025.08.15
 ---
 
 Here is gonna be weekly report 2.
