@@ -5,9 +5,9 @@
 
 main:
   - name: Weekly reports
-    url: /#reports/
+    url: reports/
     weight: 1
   - name: Modules
-    url: /#modules/
+    url: modules/
     weight: 2
 
