@@ -26,8 +26,9 @@ sections:
   - block: collection
     id: reports
     content:
-      title: Weekly reports
-      count: 2
+      title: Weekly Reports
+      text: "Explore all weekly reports with summaries and details."
+      count: 4
       filters:
         folders:
           - reports
@@ -36,19 +37,25 @@ sections:
         text: "View all reports →"
         url: "reports/"
     design:
-      view: article-grid
+      view: card-grid
       columns: 2
       align: center
       card:
         style: shadow
         border: true
-        padding: "1rem"
+        padding: "1.5rem"
+        title: true
+        subtitle: true
+        text: true
+        image: true
+        button: true
 
   - block: collection
     id: modules
     content:
       title: Modules
-      count: 2
+      text: "Browse available modules with guides and materials."
+      count: 4
       filters:
         folders:
           - modules
@@ -57,12 +64,15 @@ sections:
         text: "View all modules →"
         url: "modules/"
     design:
-      view: article-grid
+      view: card-grid
       columns: 2
       align: center
       card:
         style: shadow
         border: true
-        padding: "1rem"
-
----
+        padding: "1.5rem"
+        title: true
+        subtitle: true
+        text: true
+        image: true
+        button: true
