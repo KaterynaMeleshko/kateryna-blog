@@ -21,7 +21,7 @@ sections:
           filename: background.jpg
           size: cover
           position: center
-      text_align: center
+      align: center
 
   - block: collection
     id: reports
@@ -38,6 +38,11 @@ sections:
     design:
       view: article-grid
       columns: 2
+      align: center
+      card:
+        style: shadow
+        border: true
+        padding: "1rem"
 
   - block: collection
     id: modules
@@ -54,4 +59,10 @@ sections:
     design:
       view: article-grid
       columns: 2
+      align: center
+      card:
+        style: shadow
+        border: true
+        padding: "1rem"
+
 ---
