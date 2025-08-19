@@ -2,6 +2,7 @@
 title: Module 1
 date: 2025-08-15
 weight: 1
+type: post
 
 design:
   card:
