@@ -1,10 +1,10 @@
 ---
-title: Module 1
+title: Module 2
 summary: Description of the module
 autor:
   - admin
 
-publication_type: 1
+publication_type: 2
 
 featured: true
 draft: false

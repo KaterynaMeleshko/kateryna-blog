@@ -113,3 +113,7 @@ languages:
 ## About Me
 
 I am a student and have recently started the PiBS program in the field of computer science. At this stage, I am actively familiarizing myself with modern technologies and practical aspects of working in IT, striving to develop professional skills and deepen theoretical knowledge. This blog will be used for weekly reports to track progress and self-reflection, as well as for documenting modules and related work.
+
+---
+[All reports →](/reports/){.btn}
+[All modules →](/modules/){.btn}

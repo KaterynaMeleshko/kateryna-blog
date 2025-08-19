@@ -21,7 +21,7 @@ sections:
           filename: background.jpg
           size: cover
           position: center
-      align: center
+      text_align: center
 
   - block: collection
     id: reports

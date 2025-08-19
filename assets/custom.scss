@@ -1,0 +1,70 @@
+/* Общий фон/тема */
+:root {
+  --accent: #ef4444; /* «tailwind red-500» */
+  --accent-600: #dc2626;
+  --bg: #0b0b0d;
+  --card: #131316;
+  --card-hover: #17171b;
+  --muted: #a3a3a3;
+}
+
+html.dark body {
+  background-color: var(--bg);
+}
+
+/* Центрирование секций на главной */
+.home-section .container,
+.home-section .container-lg,
+.home-section .container-xl {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1100px; /* уютная ширина */
+}
+
+/* Заголовки секций */
+.section-heading, .home-section h1, .home-section h2 {
+  text-align: center;
+}
+
+/* Карточки */
+.article-card, .pub-list-item, .card {
+  background: var(--card);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 20px;
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+.article-card:hover, .pub-list-item:hover, .card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0,0,0,.35);
+  border-color: rgba(239, 68, 68, .35); /* акцент на hover */
+}
+
+/* Текстовые оттенки */
+p, li, .article-style {
+  color: #e5e5e5;
+}
+
+/* Кнопки (универсальные) */
+.btn, a.btn, .btn-primary {
+  display: inline-block;
+  padding: .65rem 1rem;
+  border-radius: 999px;
+  border: 1px solid var(--accent);
+  color: #fff !important;
+  background: var(--accent);
+  transition: transform .15s ease, background .2s ease, border-color .2s ease;
+}
+.btn:hover, a.btn:hover, .btn-primary:hover {
+  background: var(--accent-600);
+  border-color: var(--accent-600);
+  transform: translateY(-1px);
+}
+
+/* Кнопки-ссылки в коллекциях */
+.section-more, .collection-more, .view-more {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* Иконки/эмодзи в меню — небольшая подстройка выравнивания */
+.navbar .nav-link { display: inline-flex; gap: .35rem; align-items: center; }
