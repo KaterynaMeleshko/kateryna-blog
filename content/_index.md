@@ -23,8 +23,7 @@ sections:
           position: center
       text_align: center
 
-
-    - block: collection
+  - block: collection
     id: modules
     content:
       title: Modules
