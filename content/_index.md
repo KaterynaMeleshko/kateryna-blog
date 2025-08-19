@@ -18,7 +18,7 @@ sections:
       color: red
       background:
         image:
-          filename: stacked-peaks.svg
+          filename: backgroung.svg
           size: cover
           position: center
       text_align: center
