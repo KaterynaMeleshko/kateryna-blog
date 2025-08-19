@@ -11,8 +11,8 @@ header:
     align: "left"
     fixed_to_top: true
     show_search: true
-    show_theme_chooser: true
-    color: zinc
+    show_theme_chooser: false
+    color: red
     logo:
       text: "Kateryna's Blog"
       font_family: "Helvetica, Arial, sans-serif"

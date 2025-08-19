@@ -27,7 +27,7 @@ sections:
     id: reports
     content:
       title: Weekly Reports
-      text: "Explore all weekly reports with summaries and details."
+      text: ""
       count: 4
       filters:
         folders:
@@ -54,7 +54,7 @@ sections:
     id: modules
     content:
       title: Modules
-      text: "Browse available modules with guides and materials."
+      text: ""
       count: 4
       filters:
         folders:
