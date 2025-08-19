@@ -18,7 +18,7 @@ sections:
       color: red
       background:
         image:
-          filename: backgroung.svg
+          filename: backgroung.jpg
           size: cover
           position: center
       text_align: center
