@@ -6,4 +6,6 @@ weight: 2
 featured: true
 draft: false   
 
+---
+
 Here is gonna be module 2.
