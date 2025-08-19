@@ -1,17 +1,8 @@
 ---
 title: Module 2
 summary: Description of the module
-autor:
-  - admin
-
-publication_type: 2
-
-featured: true
-draft: false
-reading_time: true
-profile: true
-commentable: true
-editable: false
+date: 2025-08-15
+weight: 2
 
 design:
   card:
@@ -22,3 +13,5 @@ design:
     color: red
     background_color: default
 ---
+
+Here is gonna be module 2.
