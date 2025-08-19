@@ -28,7 +28,7 @@ sections:
     content:
       title: Modules
       text: ""
-      count: 4
+      count: 2
       filters:
         folders:
           - modules
@@ -56,7 +56,7 @@ sections:
     content:
       title: Weekly Reports
       text: ""
-      count: 4
+      count: 2
       filters:
         folders:
           - reports
