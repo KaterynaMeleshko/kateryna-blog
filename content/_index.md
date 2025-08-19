@@ -26,35 +26,32 @@ sections:
   - block: collection
     id: reports
     content:
-      title: Weekly Reports
+      title: Weekly reports
       count: 2
       filters:
         folders:
           - reports
         featured_only: false
+      link:
+        text: "View all reports →"
+        url: "reports/"
     design:
-      view: card-grid  
+      view: article-grid
       columns: 2
-      card:
-        shadow: true
-        hover_effect: lift
-        border_radius: "0.5rem"
-        padding: "1rem"
 
   - block: collection
     id: modules
     content:
       title: Modules
+      count: 2
       filters:
         folders:
           - modules
         featured_only: false
+      link:
+        text: "View all modules →"
+        url: "modules/"
     design:
-      view: card-grid
+      view: article-grid
       columns: 2
-      card:
-        shadow: true
-        hover_effect: lift
-        border_radius: "0.5rem"
-        padding: "1rem"
 ---
