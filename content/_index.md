@@ -23,6 +23,35 @@ sections:
           position: center
       text_align: center
 
+
+    - block: collection
+    id: modules
+    content:
+      title: Modules
+      text: ""
+      count: 4
+      filters:
+        folders:
+          - modules
+        featured_only: false
+      link:
+        text: "View all modules →"
+        url: "modules/"
+    design:
+      view: card-grid
+      columns: 2
+      align: center
+      card:
+        style: shadow
+        border: true
+        padding: "1.5rem"
+        title: true
+        subtitle: true
+        text: true
+        image: true
+        button: true
+
+
   - block: collection
     id: reports
     content:
@@ -50,31 +79,5 @@ sections:
         image: true
         button: true
 
-  - block: collection
-    id: modules
-    content:
-      title: Modules
-      text: ""
-      count: 4
-      filters:
-        folders:
-          - modules
-        featured_only: false
-      link:
-        text: "View all modules →"
-        url: "modules/"
-    design:
-      view: card-grid
-      columns: 2
-      align: center
-      card:
-        style: shadow
-        border: true
-        padding: "1.5rem"
-        title: true
-        subtitle: true
-        text: true
-        image: true
-        button: true
 
 ---
