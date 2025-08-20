@@ -59,6 +59,7 @@ sections:
       filters:
         folders:
           - modules
+        page_type: post
         featured_only: false
       link:
         text: "View all modules →"
