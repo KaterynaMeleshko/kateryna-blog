@@ -50,7 +50,7 @@ sections:
         image: true
         button: true
 
-- block: collection
+ - block: collection
     id: modules
     content:
       title: Modules
