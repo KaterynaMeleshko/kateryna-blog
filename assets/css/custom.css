@@ -1,7 +1,17 @@
 h2 {
   color: maroon !important;
+  h2 {
+  color: maroon !important;
+  text-shadow:
+    1px 1px 0 #71717A,
+   -1px -1px 0 #71717A,
+    1px -1px 0 #71717A,
+   -1px 1px 0 #71717A;
+}
+
 }
 body {
+    color: #71717A; /* zinc-500 */
   font-family: "Helvetica, Arial, sans-serif" !important;
   font-size: 16px !important;
   font-weight: normal !important;
