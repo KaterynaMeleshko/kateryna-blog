@@ -24,12 +24,12 @@ body {
   font-family: "Helvetica, Arial, sans-serif" !important;
   font-size: 22px !important;
   font-weight: 400 !important;
-  line-height: 1.7 !important;
+  line-height: 1.5 !important;
 }
 
 p, .article-style, .prose, .card-text, .content p {
   font-size: 20px !important;
-  line-height: 1.7 !important;
+  line-height: 1.5 !important;
 }
 
 .page, .content, .article, .home-section, .container, section, main, .page-body, .main, .card {
