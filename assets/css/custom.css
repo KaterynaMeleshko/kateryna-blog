@@ -7,7 +7,8 @@
   font-size: 1.7rem !important;
 }
 
-body, p, li, span, div {
+
+body, p, li, span, div{
   background-color: #000000 !important; 
   font-family: "Helvetica, Arial, sans-serif" !important;
   font-size: 20px !important;
@@ -15,6 +16,20 @@ body, p, li, span, div {
   line-height: 1.7 !important;
   color: #D4D4D8 !important;
 }
+
+.mb-6.text-3xl.font-bold {
+  font-size: 30px !important;
+  font-weight: 700 !important;
+  color: #D4D4D8 !important;
+}
+
+.mb-6.text-3xl.font-bold.text-gray-900.dark\:text-white {
+  font-size: 30px !important;
+  font-weight: 700 !important;
+  color: #D4D4D8 !important;
+  font-family: "Helvetica, Arial, sans-serif" !important;
+}
+
 
 .reports, .modules {
   background-color: #000000 !important;
