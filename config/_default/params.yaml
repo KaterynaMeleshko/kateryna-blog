@@ -1,7 +1,6 @@
 # Appearance
 appearance:
   mode: dark
-  color: red
   custom_css: ["css/custom.css"]
   font:
     family: "Helvetica, Arial, sans-serif"
@@ -19,12 +18,11 @@ header:
     fixed_to_top: true
     show_search: true
     show_theme_chooser: false
-    color: red
     logo:
       text: "Kateryna's Blog"
       font_family: "Helvetica, Arial, sans-serif"
       font_weight: "bold"
-      font_size: "1.5rem"
+      font_size: "3rem"
 
 # Localization
 locale:
