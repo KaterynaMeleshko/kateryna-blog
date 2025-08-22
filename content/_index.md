@@ -3,7 +3,7 @@ title: ""
 date: 2022-10-24
 type: landing
 design:
-  spacing: "3rem"
+  spacing: "2rem"
   font_family: "Helvetica, Arial, sans-serif"
   font_size: "1rem"
 sections:
