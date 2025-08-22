@@ -1,6 +1,7 @@
 .navbar {
   background: #000000 !important;
   opacity: 1 !important;
+  border: none !important;
 }
 
 .navbar-brand {
