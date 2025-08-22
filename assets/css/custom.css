@@ -2,12 +2,18 @@
   font-size: 1.7rem !important;
 }
 
-body, p, li, span, div{
-  background-image: url("/media/background.jpg"); /* файл лежит в assets/media/ */
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
+html, body {
+  min-height: 100%;
+}
+
+html {
+  background: url("/media/background.jpg") no-repeat center center fixed;
   background-size: cover;
+  background-color: #000000;
+}
+
+body, .page, .content, .article, .card, .home-section, .container, section {
+  background-color: transparent !important;
   color: #D4D4D8 !important;
   font-family: "Helvetica, Arial, sans-serif" !important;
   font-size: 22px !important;
@@ -15,27 +21,12 @@ body, p, li, span, div{
   line-height: 1.7 !important;
 }
 
-.page, .content, .article, .card, .home-section, .container, section {
-  background-color: transparent !important;
-}
-
-.mb-6.text-3xl.font-bold {
-  font-size: 32px !important;
-  font-weight: 700 !important;
-  color: #D4D4D8 !important;
-}
-
+.mb-6.text-3xl.font-bold,
 .mb-6.text-3xl.font-bold.text-gray-900.dark\:text-white {
   font-size: 32px !important;
   font-weight: 700 !important;
   color: #D4D4D8 !important;
   font-family: "Helvetica, Arial, sans-serif" !important;
-}
-
-
-.reports, .modules {
-  background-color: #000000 !important;
-
 }
 
 h1 {
