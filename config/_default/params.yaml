@@ -2,6 +2,13 @@
 appearance:
   mode: dark
   color: red
+  custom_css: ["css/custom.css"]
+  font:
+    family: "Helvetica, Arial, sans-serif"
+    size: "16px"
+    weight: "normal"
+    line_height: "1.6"
+
 
 # Site header
 header:
