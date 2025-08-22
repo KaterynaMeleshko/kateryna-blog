@@ -1,18 +1,5 @@
-.navbar-brand {
-  font-size: 1.7rem !important;
-}
-
 html, body {
   min-height: 100%;
-}
-
-html {
-  background-color: #000000 !important;
-  background-image: url("/images/background.jpg"), url("/media/background.jpg");
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  background-attachment: fixed !important;
-  background-size: cover !important;
 }
 
 body {
@@ -24,25 +11,36 @@ body {
   line-height: 1.7 !important;
 }
 
+/* Слой с фото позади контента */
+html::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-image: url("/images/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Контейнеры без фона */
 .page, .content, .article, .home-section, .container, section, main, .page-body, .main, .card {
   background-color: transparent !important;
   background-image: none !important;
 }
 
+/* Иногда тема задаёт bg-* классами */
 [class*="bg-"], [class*="bg_"] {
   background-color: transparent !important;
   background-image: none !important;
 }
 
+/* Твои размеры/цвета, оставляю как были */
+.navbar-brand { font-size: 1.7rem !important; }
+
 .mb-6.text-3xl.font-bold,
 .mb-6.text-3xl.font-bold.text-gray-900.dark\:text-white {
-  font-size: 42px !important;
-  font-weight: 700 !important;
-  color: #D4D4D8 !important;
-  font-family: "Helvetica, Arial, sans-serif" !important;
-}
-
-.article-title, .card-title, .article-link, .summary-title {
   font-size: 32px !important;
   font-weight: 700 !important;
   color: #D4D4D8 !important;
