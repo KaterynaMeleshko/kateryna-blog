@@ -2,7 +2,6 @@
 
 html, body { min-height: 100%; }
 
-/* фон на весь сайт из static/images */
 html {
   background: #000 url("/images/background.jpg") center / cover no-repeat fixed !important;
 }
@@ -11,18 +10,22 @@ body {
   background: transparent !important;
   color: #D4D4D8 !important;
   font-family: "Helvetica, Arial, sans-serif" !important;
-  font-size: 26px !important;
+  font-size: 22px !important;
   font-weight: 400 !important;
   line-height: 1.7 !important;
 }
 
-/* секции/карточки прозрачные, чтобы фон был виден */
+p, .article-style, .prose, .card-text, .content p {
+  font-size: 22px !important;
+  line-height: 1.7 !important;
+}
+
 .page, .content, .article, .home-section, .container, section, main, .page-body, .main, .card {
   background-color: transparent !important;
   background-image: none !important;
 }
 
-/* заголовки разделов на главной (Weekly Reports / Modules) */
+
 .mb-6.text-3xl.font-bold,
 .mb-6.text-3xl.font-bold.text-gray-900.dark\:text-white {
   font-size: 32px !important;
@@ -31,7 +34,6 @@ body {
   font-family: "Helvetica, Arial, sans-serif" !important;
 }
 
-/* заголовки в постах */
 h1 {
   font-family: "Helvetica, Arial, sans-serif" !important;
   font-size: 40px !important;
