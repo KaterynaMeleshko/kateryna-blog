@@ -11,17 +11,19 @@ body {
   line-height: 1.7 !important;
 }
 
-/* Слой с фото позади контента */
 html::before {
   content: "";
   position: fixed;
   inset: 0;
   z-index: -1;
   pointer-events: none;
-  background-image: url("/images/background.jpg");
+  background-image:
+    url("/images/background.jpg"),
+    url("/media/background.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-color: #000000;
 }
 
 /* Контейнеры без фона */
@@ -30,11 +32,11 @@ html::before {
   background-image: none !important;
 }
 
-/* Иногда тема задаёт bg-* классами */
 [class*="bg-"], [class*="bg_"] {
   background-color: transparent !important;
   background-image: none !important;
 }
+
 
 /* Твои размеры/цвета, оставляю как были */
 .navbar-brand { font-size: 1.7rem !important; }

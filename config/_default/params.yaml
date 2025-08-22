@@ -15,9 +15,6 @@ header:
     show_theme_chooser: false
     logo:
       text: "Kateryna's Blog"
-      font_family: "Helvetica, Arial, sans-serif"
-      font_weight: "bold"
-      font_size: "3rem"
 
 # Localization
 locale:
