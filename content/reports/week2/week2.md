@@ -17,15 +17,10 @@ design:
 
 ## Intro
 
-{:style="color: red"}
-
 Hi there! Welcome to my blog.
 Here, I’ll be sharing a new update every two weeks, mainly to keep track of my goals, progress at work and in my studies, and sometimes just to drop in some general thoughts or reflections along the way.
 
 ## Work progress
-
-:{style="color: red"}
-
 ### Tasks
 - [x] Get familiar with administrative and organizational matters  
 - [x] Learn more about Amanox and what they do
@@ -44,7 +39,4 @@ I enjoyed working on the Hardware module and found the start very engaging. At t
 
 
 ## School progress
-
-:{style="color: red"}
-
 ### Tasks
