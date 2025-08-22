@@ -1,6 +1,5 @@
-.navbar {
-  background: #000000 !important;
-  opacity: 1 !important;
+.navbar, .navbar-dark, .navbar-default {
+  background-color: #000000 !important; /* чёрный */
   border: none !important;
 }
 
