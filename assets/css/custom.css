@@ -1,3 +1,7 @@
+.navbar-brand {
+  font-size: 4rem !important;
+}
+
 body, p, li, span, div {
   font-family: "Helvetica, Arial, sans-serif" !important;
   font-size: 20px !important;
