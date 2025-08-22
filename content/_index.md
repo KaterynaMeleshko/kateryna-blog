@@ -14,13 +14,6 @@ sections:
       username: admin
       text: ""
     design:
-      css_class: dark
-      color: red
-      background:
-        image:
-          filename: background.jpg
-          size: cover
-          position: center
       text_align: center
 
   - block: collection
