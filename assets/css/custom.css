@@ -1,8 +1,3 @@
-.navbar, .navbar-dark, .navbar-default {
-  background-color: #000000 !important; /* чёрный */
-  border: none !important;
-}
-
 .navbar-brand {
   font-size: 1.7rem !important;
 }
@@ -15,7 +10,7 @@ body, p, li, span, div{
   background-size: cover;
   color: #D4D4D8 !important;
   font-family: "Helvetica, Arial, sans-serif" !important;
-  font-size: 24px !important;
+  font-size: 22px !important;
   font-weight: 400 !important;
   line-height: 1.7 !important;
 }
