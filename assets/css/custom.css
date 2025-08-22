@@ -12,7 +12,7 @@ body, p, li, span, div{
   background-size: cover;
   color: #D4D4D8 !important;
   font-family: "Helvetica, Arial, sans-serif" !important;
-  font-size: 30px !important;
+  font-size: 26px !important;
   font-weight: 400 !important;
   line-height: 1.7 !important;
 }
@@ -22,7 +22,7 @@ body, p, li, span, div{
 }
 
 .mb-6.text-3xl.font-bold {
-  font-size: 26px !important;
+  font-size: 32px !important;
   font-weight: 700 !important;
   color: #D4D4D8 !important;
 }
