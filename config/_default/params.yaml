@@ -1,10 +1,8 @@
-# Appearance
 appearance:
   mode: dark
+  color: red
   custom_css: ["css/custom.css"]
 
-
-# Site header
 header:
   navbar:
     enable: true
@@ -16,14 +14,13 @@ header:
     logo:
       text: "Kateryna's Blog"
 
-# Localization
 locale:
   date_format: 'Jan 2, 2006'
   time_format: '3:04 PM'
 
-# Site features
 features:
   math:
     enable: true
   privacy_pack:
     enable: true
+

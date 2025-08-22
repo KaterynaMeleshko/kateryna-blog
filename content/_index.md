@@ -2,12 +2,10 @@
 title: ""
 date: 2022-10-24
 type: landing
-
 design:
   spacing: "3rem"
   font_family: "Helvetica, Arial, sans-serif"
   font_size: "1rem"
-
 sections:
   - block: resume-biography-3
     content:
@@ -24,8 +22,7 @@ sections:
       text: ""
       count: 2
       filters:
-        folders:
-          - reports
+        folders: [reports]
         featured_only: false
       link:
         text: "View all reports →"
@@ -52,8 +49,7 @@ sections:
       text: ""
       count: 2
       filters:
-        folders:
-          - modules
+        folders: [modules]
         page_type: post
         featured_only: false
       link:
@@ -72,5 +68,4 @@ sections:
         text: true
         image: true
         button: true
-
 ---
