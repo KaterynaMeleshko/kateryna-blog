@@ -1,5 +1,15 @@
+.navbar-brand {
+  font-size: 1.7rem !important;
+}
+
 html, body {
   min-height: 100%;
+}
+
+html {
+  background: url("/media/background.jpg") no-repeat center top;
+  background-size: cover;
+  background-color: #000000;
 }
 
 body {
@@ -11,35 +21,9 @@ body {
   line-height: 1.7 !important;
 }
 
-html::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-  pointer-events: none;
-  background-image:
-    url("/images/background.jpg"),
-    url("/media/background.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-color: #000000;
-}
-
-/* Контейнеры без фона */
-.page, .content, .article, .home-section, .container, section, main, .page-body, .main, .card {
+.page, .content, .article, .home-section, .container, section {
   background-color: transparent !important;
-  background-image: none !important;
 }
-
-[class*="bg-"], [class*="bg_"] {
-  background-color: transparent !important;
-  background-image: none !important;
-}
-
-
-/* Твои размеры/цвета, оставляю как были */
-.navbar-brand { font-size: 1.7rem !important; }
 
 .mb-6.text-3xl.font-bold,
 .mb-6.text-3xl.font-bold.text-gray-900.dark\:text-white {
