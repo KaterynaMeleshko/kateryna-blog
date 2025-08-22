@@ -17,14 +17,14 @@ design:
 
 ## Intro
 
-{style="color: red"}
+{:style="color: red"}
 
 Hi there! Welcome to my blog.
 Here, I’ll be sharing a new update every two weeks, mainly to keep track of my goals, progress at work and in my studies, and sometimes just to drop in some general thoughts or reflections along the way.
 
 ## Work progress
 
-{style="color: red"}
+:{style="color: red"}
 
 ### Tasks
 - [x] Get familiar with administrative and organizational matters  
@@ -35,7 +35,7 @@ Here, I’ll be sharing a new update every two weeks, mainly to keep track of my
 ### Details
 I started my work on 11.08.2025. On the first day, I set up my laptop and work tools with Xavier and received an introduction from the PiBS coaches about the training and modules. Coincidentally, my first day also ended with the company’s annual barbecue, which was a nice chance to meet many colleagues. 
 
-On Thursday and Friday, I worked on Module 0 — building the blog website.  
+On Thursday and Friday, I worked on Module 0 which was building the blog website.  
 
 The following week, starting Wednesday, I continued with Module 1: Hardware. I studied the technical components of a computer and practiced by "assembling" a virtual PC using an online store.  
 
@@ -45,6 +45,6 @@ I enjoyed working on the Hardware module and found the start very engaging. At t
 
 ## School progress
 
-{style="color: red"}
+:{style="color: red"}
 
 ### Tasks
