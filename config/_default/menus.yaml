@@ -6,10 +6,8 @@
 main:
   - name: Weekly reports
     url: reports/
-    font_size: 1.4rem
     weight: 1
   - name: Modules
     url: modules/
-    font_size: 1.4rem
     weight: 2
 

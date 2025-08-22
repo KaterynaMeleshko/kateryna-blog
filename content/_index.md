@@ -27,6 +27,7 @@ sections:
     id: reports
     content:
       title: Weekly Reports
+      font_size: 1.4rem
       text: ""
       count: 2
       filters:
@@ -54,6 +55,7 @@ sections:
     id: modules
     content:
       title: Modules
+      font_size: 1.4rem
       text: ""
       count: 2
       filters:

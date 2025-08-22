@@ -6,12 +6,6 @@
 .navbar-brand {
   font-size: 1.7rem !important;
 }
-.section-title, .page-title, .article-title, .card-title {
-  font-size: 28px !important;
-  font-weight: 700 !important;
-  color: #D4D4D8 !important;
-  font-family: "Helvetica, Arial, sans-serif" !important;
-}
 
 body, p, li, span, div {
   background-color: #000000 !important; 
