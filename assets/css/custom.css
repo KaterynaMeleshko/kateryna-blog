@@ -20,12 +20,7 @@ body, p, li, span, div {
   background-color: #000000 !important;
 
 }
-.reports-title, .modules-title {
-  font-size: 28px !important;
-  font-weight: 700 !important;
-  color: #D4D4D8 !important;
-  font-family: "Helvetica, Arial, sans-serif" !important;
-}
+
 
 h1 {
   font-family: "Helvetica, Arial, sans-serif" !important;
