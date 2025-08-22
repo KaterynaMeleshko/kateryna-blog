@@ -1,7 +1,6 @@
 ---
 # Display name
-title: Kateryna's Blog
-font-size: 1.4rem
+#title: Kateryna's Blog
 
 # Full name (for SEO)
 first_name: Kateryna
@@ -18,7 +17,7 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-#role: PiBS student
+role: Kateryna's Blog
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
