@@ -22,10 +22,10 @@ Here, I’ll be sharing a new update every two weeks, mainly to keep track of my
 
 ## Work progress
 ### Tasks
-- [x] Get familiar with administrative and organizational matters  
-- [x] Learn more about Amanox and what they do
-- [x] Build a basic website for this blog  
-- [x] Do the first subchapter of Module 1: Hardware  
+- Get familiar with administrative and organizational matters  
+- Learn more about Amanox and what they do
+- Build a basic website for this blog  
+- Do the first subchapter of Module 1: Hardware  
 
 ### Details
 I started my work on 11.08.2025. On the first day, I set up my laptop and work tools with Xavier and received an introduction from the PiBS coaches about the training and modules. Coincidentally, my first day also ended with the company’s annual barbecue, which was a nice chance to meet many colleagues. 
@@ -38,5 +38,3 @@ The following week, starting Wednesday, I continued with Module 1: Hardware. I s
 I enjoyed working on the Hardware module and found the start very engaging. At the same time, I realized that I need to improve my time management. Because I was sick on Thursday, some tasks took longer than planned, and I want to create a better schedule to stay productive.  
 
 
-## School progress
-### Tasks
