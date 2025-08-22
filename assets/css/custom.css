@@ -7,9 +7,9 @@
   font-size: 1.7rem !important;
 }
 
-
-body, p, li, span, div{
-  background-color: transparent !important;
+body {
+  background: #000000 url("/images/background.jpg") no-repeat center center fixed;
+  background-size: cover;
   font-family: "Helvetica, Arial, sans-serif" !important;
   font-size: 20px !important;
   font-weight: 400 !important;
