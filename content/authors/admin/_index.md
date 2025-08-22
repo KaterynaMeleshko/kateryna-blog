@@ -1,6 +1,7 @@
 ---
 # Display name
 title: Kateryna's Blog
+font-size: 1.4rem
 
 # Full name (for SEO)
 first_name: Kateryna

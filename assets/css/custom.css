@@ -1,12 +1,5 @@
 .navbar-brand {
-  font-size: 2.5rem !important;
-}
-
-.author-title {
-  font-size: 3rem !important; /* увеличь на вкус: 3rem = ~48px */
-  font-weight: 700 !important;
-  color: #D4D4D8 !important;
-  font-family: "Helvetica, Arial, sans-serif" !important;
+  font-size: 1.7rem !important;
 }
 
 body, p, li, span, div {
