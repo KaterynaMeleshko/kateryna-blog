@@ -1,5 +1,6 @@
 appearance:
   mode: dark
+  color: zink
   custom_css: ["css/custom.css"]
 
 header:
