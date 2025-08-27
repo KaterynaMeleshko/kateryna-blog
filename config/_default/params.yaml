@@ -1,6 +1,5 @@
 appearance:
   mode: dark
-  color: red
   custom_css: ["css/custom.css"]
 
 header:
