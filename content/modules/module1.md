@@ -81,7 +81,7 @@ All electronic parts generate heat while working. Cooling systems remove this he
 
 <details>
   <summary>Where is the PSU in your PC? What about a laptop?</summary>
-  <p>Laptop has an external power adapter</p>
+  <p>Laptop has an external power adapter, PC has an internal PSU</p>
 </details>
 
 <details>
@@ -93,3 +93,10 @@ All electronic parts generate heat while working. Cooling systems remove this he
   <summary>How does the cooling work in your device? What about a smartphone?</summary>
   <p>This laptop has no fan and has a passive cooling system with heatsink. Same system goes fot smartphones</p>
 </details>
+
+## Hypothetical machine
+---
+
+[Link to the hypothetical machine components](https://www.galaxus.ch/en/shoplist/show/CfDJ8KEwk7Q9MilFpMKq1D7DsMYZHMzdi6N0nHtamDe5NRsTGKuaTQzHPAtoqvRUC12oqlu1W7KiygJGgfElHFwuULBD0t1MmHeDoXrc9kJbzqwlZGMPJg1c3iRPtvPAGZ8ZDA)
+
+
