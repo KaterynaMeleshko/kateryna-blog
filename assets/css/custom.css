@@ -67,6 +67,13 @@ h2 {
    -1px  1px 0 #D4D4D8;
 }
 
+details summary {
+  color: #D4D4D8 !important; 
+  text-shadow: none !important;
+  font-size: 22px !important;  
+  font-weight: 400 !important;
+}
+
 h3 {
   font-family: "Helvetica, Arial, sans-serif" !important;
   font-size: 28px !important;
