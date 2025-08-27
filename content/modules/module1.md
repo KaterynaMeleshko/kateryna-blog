@@ -57,6 +57,7 @@ All electronic parts generate heat while working. Cooling systems remove this he
 - Without proper cooling, the system could overheat and malfunction.  
 
 ## Advanced Questions
+---
 
 <details>
   <summary>How fast (in GHz) is the CPU you are using right now?</summary>
