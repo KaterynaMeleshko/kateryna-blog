@@ -56,3 +56,39 @@ All electronic parts generate heat while working. Cooling systems remove this he
 - Water cooling: uses liquid to transport heat away, more efficient for high-performance systems.  
 - Without proper cooling, the system could overheat and malfunction.  
 
+##Advanced Questions
+
+<details>
+  <summary>How fast (in GHz) is the CPU you are using right now?</summary>
+  <p>4.4GHz</p>
+</details>
+
+<details>
+  <summary>What chipset is on the motherboard? Could there be more options?</summary>
+  <p>Apple M4 SoC, no alternatives for laptops because everything is already integrated in one chip</p>
+</details>
+
+<details>
+  <summary>How many gigabytes of RAM are in the PC you’re using?</summary>
+  <p>24GB </p>
+</details>
+
+<details>
+  <summary>What is/are the storage medium/media in your PC?</summary>
+  <p>SSD, 512GB</p>
+</details>
+
+<details>
+  <summary>Where is the PSU in your PC? What about a laptop?</summary>
+  <p>Laptop has an external power adapter</p>
+</details>
+
+<details>
+  <summary>Do you have a GPU?</summary>
+  <p>Yes, it is integrated in the chip</p>
+</details>
+
+<details>
+  <summary>How does the cooling work in your device? What about a smartphone?</summary>
+  <p>This laptop has no fan and has a passive cooling system with heatsink. Same system goes fot smartphones</p>
+</details>
