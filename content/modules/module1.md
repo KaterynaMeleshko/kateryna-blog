@@ -56,7 +56,7 @@ All electronic parts generate heat while working. Cooling systems remove this he
 - Water cooling: uses liquid to transport heat away, more efficient for high-performance systems.  
 - Without proper cooling, the system could overheat and malfunction.  
 
-##Advanced Questions
+## Advanced Questions
 
 <details>
   <summary>How fast (in GHz) is the CPU you are using right now?</summary>
