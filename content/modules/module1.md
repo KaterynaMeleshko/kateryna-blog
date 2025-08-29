@@ -16,7 +16,7 @@ design:
 ---
 
 
-## Part 1 - Hardware components
+## Hardware components
 ---
 
 #### CPU  
