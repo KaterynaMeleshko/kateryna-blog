@@ -99,4 +99,30 @@ All electronic parts generate heat while working. Cooling systems remove this he
 
 [Link to the hypothetical machine components](https://www.galaxus.ch/en/shoplist/show/CfDJ8KEwk7Q9MilFpMKq1D7DsMYZHMzdi6N0nHtamDe5NRsTGKuaTQzHPAtoqvRUC12oqlu1W7KiygJGgfElHFwuULBD0t1MmHeDoXrc9kJbzqwlZGMPJg1c3iRPtvPAGZ8ZDA)
 
+## Bits and bytes
 
+<details>
+  <summary>Say you have a gigabit internet connection (downstream). How many kilobytes can you download per second?​</summary>
+  <p>A gigabit is 1,000,000,000 bits/sec. Divide by 8 = 125,000,000 bytes/sec, which is about 122,070 KB/sec</p>
+</details>
+
+<details>
+  <summary>How many bits are in a Mebibyte? </summary>
+  <p>One Mebibyte = 2^20 bytes = 1,048,576 bytes. In bits: 1,048,576 × 8 = 8,388,608 bits</p>
+</details>
+
+<details>
+  <summary>You buy an HDD advertised with 1TB. How much usable space will the Windows operating system report you and why?​</summary>
+  <p>The drive shows about 931 GB usable. The difference comes from decimal vs binary units​</p>
+</details>
+
+<details>
+  <summary>Decode the following binary sequences to text. Each character uses 8-bits. ​
+
+01000001011011010110000101101110011011110111100000100000010101000110010101100001
+
+Describe your approach in your learning-blog.​</summary>
+  <p>I divided the long binary sequence into separate 8-bit chunks, since each ASCII character is stored in 8 bits. Then I translated each 8-bit value with the ASCII table into its corresponding letter, putting all characters together gave me the text “Amanox Tea”​</p>
+</details>
+
+## Multiplication with basic instructions
