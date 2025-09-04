@@ -4,6 +4,8 @@ summary: "Here I will post my solutions to the tasks from the module"
 date: 2025-08-15
 weight: 2
 type: page
+_build:
+  list: never 
 
 design:
   card:
@@ -56,6 +58,8 @@ all electronic parts generate heat while working. Cooling systems remove this he
 - water cooling: uses liquid to transport heat away, more efficient for high-performance systems.  
 - without proper cooling, the system could overheat and malfunction.  
 
+--- 
+
 ## Advanced Questions
 ---
 
@@ -94,10 +98,14 @@ all electronic parts generate heat while working. Cooling systems remove this he
   <p>this laptop has no fan and has a passive cooling system with heatsink. same system goes fot smartphones</p>
 </details>
 
+---
+
 ## Hypothetical machine
 ---
 
 [link to the hypothetical machine components](https://www.galaxus.ch/en/shoplist/show/CfDJ8KEwk7Q9MilFpMKq1D7DsMYZHMzdi6N0nHtamDe5NRsTGKuaTQzHPAtoqvRUC12oqlu1W7KiygJGgfElHFwuULBD0t1MmHeDoXrc9kJbzqwlZGMPJg1c3iRPtvPAGZ8ZDA)
+
+---
 
 ## Bits and bytes
 
@@ -125,5 +133,7 @@ all electronic parts generate heat while working. Cooling systems remove this he
 Describe your approach in your learning-blog.​</summary>
   <p>i divided the long binary sequence into separate 8-bit chunks, since each ASCII character is stored in 8 bits. then I translated each 8-bit value with the ASCII table into its corresponding letter, putting all characters together gave me the text “Amanox Tea”​</p>
 </details>
+
+---
 
 ## Multiplication with basic instructions

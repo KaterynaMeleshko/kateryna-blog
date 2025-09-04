@@ -4,6 +4,8 @@ summary: Here i will post my overview on this module
 date: 2025-08-15
 weight: 1
 type: page
+_build:
+  list: never 
 
 design:
   card:
@@ -33,11 +35,11 @@ it fetches instructions from memory by clock cycles, decodes them, executes them
 
 ### what physical components does it consist of?
 
-- lid
+#### - lid
 
 the CPU components are built so that on the very top there is a metal lid which distributes heat evenly and transfers it to the heatsink or cooler. since the processor heats up during operation, this lid is needed to avoid overheating and to protect the die from mechanical damage. usually this lid is made of copper with a nickel-plated surface so it does not oxidize.
 
-- thermal paste
+#### - thermal paste
 
 below the lid there is a layer of thermal paste. thermal paste is used to ensure good thermal conductivity from the die to the lid, because without it the lid may not fit tightly enough to the die. the paste fills all gaps and transfers heat to the lid across the entire surface of the die. thermal paste can be metallic or ceramic. in both cases the base is usually silicone or synthetic polymer oil because it does not evaporate and dries quickly. fillers vary:
 
@@ -45,7 +47,7 @@ for ceramic ones boron nitride, aluminum oxide, aluminum nitride are often used 
 
 in metallic fillers oxides of metals like zinc and aluminum may be used (cheap fillers, improve conductivity compared to pure oil, but worse than pure metals). in more expensive pastes silver or copper are used (silver conducts heat best, ~430 W/m·K vs ~400 for copper). in rare cases diamond dust is used (up to 2000 W/m·K).
 
-- die
+#### - die
 
 definitions:
 
@@ -73,7 +75,7 @@ how is the die made?
 
 first silicon is extracted. quartz sand is melted, then purified, a silicon crystal is grown. the crystal is grown in cylindrical form and then sliced into thin wafers. then dielectric, metal and conductor layers are deposited. a photosensitive layer is applied, exposed to ultraviolet light forming the pattern of future transistors, then developed so the needed structure remains. doping is done by ion implantation to change conductivity of areas. these steps are repeated many times, forming transistors and connections. then the wafer is cut into dies, tested and soldered into the package.
 
-- substrate
+#### - substrate
 
 after the die is manufactured it is soldered onto a green substrate which is a multilayer high-precision PCB. this acts as an adapter between the chip and the contacts that fit into the motherboard.
 
