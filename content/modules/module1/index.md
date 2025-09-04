@@ -6,5 +6,5 @@ summary: "Overview & links to notes and exercises"
 ---
 
 Choose the section:
-- [Overview](overview/)
-- [Tasks](tasks/)
+- [Overview]({{< relref "./overview/" >}})
+- [Tasks]({{< relref "./tasks/" >}})
