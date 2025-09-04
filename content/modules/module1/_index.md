@@ -4,7 +4,3 @@ date: 2025-08-15
 type: post 
 summary: "Overview & links to notes and exercises"
 ---
-
-Choose the section:
-- [Overview]({{< relref "./overview/" >}})
-- [Tasks]({{< relref "./tasks/" >}})
