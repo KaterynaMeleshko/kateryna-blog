@@ -3,7 +3,7 @@ title: "Exercises"
 summary: "Here I will post my solutions to the tasks from the module"
 date: 2025-08-15
 weight: 2
-type: post
+type: page
 
 design:
   card:

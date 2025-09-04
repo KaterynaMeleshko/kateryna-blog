@@ -1,8 +1,8 @@
 ---
 title: "Overview"
 date: 2025-08-15
-weight: 2
-type: post
+weight: 1
+type: page
 
 design:
   card:
