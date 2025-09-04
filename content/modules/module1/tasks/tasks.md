@@ -2,7 +2,7 @@
 title: "Exercises"
 summary: "Here I will post my solutions to the tasks from the module"
 date: 2025-08-16
-type: page
+type: post
 draft: false
 design:
   view: card-grid
