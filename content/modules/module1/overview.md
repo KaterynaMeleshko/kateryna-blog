@@ -19,21 +19,23 @@ design:
 
 ## central processing unit
 
-cpu - central processing unit, executes machine instructions of programs, manages memory and devices through controllers and buses
+CPU - central processing unit, executes machine instructions of programs, manages memory and devices through controllers and buses
 
-cpu cycle: fetch → decode → execute → write-back, works based on a clock generator
----
+CPU cycle: fetch → decode → execute → write-back, works based on a clock generator
 
-### how does the cpu work?
+--- 
 
-it fetches instructions from memory by clock cycles, decodes them, executes them through arithmetic-logic units (alu/fpu) and stores the result back into registers or memory, while constantly managing the operation of other devices via controllers and buses.
+### how does the CPU work?
+
+it fetches instructions from memory by clock cycles, decodes them, executes them through arithmetic-logic units (ALU/FPU) and stores the result back into registers or memory, while constantly managing the operation of other devices via controllers and buses.
+
 ---
 
 ### what physical components does it consist of?
 
 - lid
 
-the cpu components are built so that on the very top there is a metal lid which distributes heat evenly and transfers it to the heatsink or cooler. since the processor heats up during operation, this lid is needed to avoid overheating and to protect the die from mechanical damage. usually this lid is made of copper with a nickel-plated surface so it does not oxidize.
+the CPU components are built so that on the very top there is a metal lid which distributes heat evenly and transfers it to the heatsink or cooler. since the processor heats up during operation, this lid is needed to avoid overheating and to protect the die from mechanical damage. usually this lid is made of copper with a nickel-plated surface so it does not oxidize.
 
 - thermal paste
 
@@ -41,7 +43,7 @@ below the lid there is a layer of thermal paste. thermal paste is used to ensure
 
 for ceramic ones boron nitride, aluminum oxide, aluminum nitride are often used (they are electrical insulators and do not conduct current, which makes them safe when in contact with electronic components).
 
-in metallic fillers oxides of metals like zinc and aluminum may be used (cheap fillers, improve conductivity compared to pure oil, but worse than pure metals). in more expensive pastes silver or copper are used (silver conducts heat best, ~430 w/m·k vs ~400 for copper). in rare cases diamond dust is used (up to 2000 w/m·k).
+in metallic fillers oxides of metals like zinc and aluminum may be used (cheap fillers, improve conductivity compared to pure oil, but worse than pure metals). in more expensive pastes silver or copper are used (silver conducts heat best, ~430 W/m·K vs ~400 for copper). in rare cases diamond dust is used (up to 2000 W/m·K).
 
 - die
 
@@ -53,9 +55,9 @@ dies - when circuits are patterned on the wafer, it is cut into dies, each block
 
 chip - after the die is ready it is packaged into a protective case, contacts are soldered, heatspreader is attached
 
-the cpu die is a thin plate of silicon (a few hundred microns), where transistors and multilayer metal interconnections separated by dielectrics are formed by photolithography. thin top layers are used for local connections, thick bottom ones for power and clock signals.
+the CPU die is a thin plate of silicon (a few hundred microns), where transistors and multilayer metal interconnections separated by dielectrics are formed by photolithography. thin top layers are used for local connections, thick bottom ones for power and clock signals.
 
-silicon (si) - a chemical element that is a semiconductor, depending on doping can act as conductor or insulator.
+silicon (Si) - a chemical element that is a semiconductor, depending on doping can act as conductor or insulator.
 
 doping - adding a very small amount of another element, about one atom per million. impurities create extra electrons or holes. as a result, the main element (silicon, 4 outer electrons) can become:
 
@@ -65,7 +67,7 @@ p-type (hole conductor) impurity of boron/aluminum or any element with 3 outer e
 
 insulator - pure silicon without impurities, electrons remain fixed.
 
-modern processors are manufactured using cmos technology, which combines n-type and p-type transistors in each logic circuit. this allows building basic logic elements with minimal power consumption: current flows only during switching, not in static state. controlling current through the transistor channel (gate opens or closes the path for electrons) allows forming logic elements such as and, or, not.
+modern processors are manufactured using CMOS technology, which combines n-type and p-type transistors in each logic circuit. this allows building basic logic elements with minimal power consumption: current flows only during switching, not in static state. controlling current through the transistor channel (gate opens or closes the path for electrons) allows forming logic elements such as AND, OR, NOT.
 
 how is the die made?
 
@@ -73,49 +75,51 @@ first silicon is extracted. quartz sand is melted, then purified, a silicon crys
 
 - substrate
 
-after the die is manufactured it is soldered onto a green substrate which is a multilayer high-precision pcb. this acts as an adapter between the chip and the contacts that fit into the motherboard.
+after the die is manufactured it is soldered onto a green substrate which is a multilayer high-precision PCB. this acts as an adapter between the chip and the contacts that fit into the motherboard.
+
 ---
 
-### what blocks does the cpu have?
+### what blocks does the CPU have?
 
-(cpu cycle: fetch → decode → execute → write-back)
+(CPU cycle: fetch → decode → execute → write-back)
 
-- frontend. loads and decodes instructions (former cu - control unit)
+- frontend. loads and decodes instructions (former CU - control unit)
 
-- alu. integer calculations
+- ALU. integer calculations
 
-- fpu or vector unit. works with floating point numbers and vectors
+- FPU or vector unit. works with floating point numbers and vectors
 
-- register file. the fastest memory unit in the pc, very small, stores only numbers for addition and memory addresses. data is loaded here and then goes to alu/fpu
+- register file. the fastest memory unit in the PC, very small, stores only numbers for addition and memory addresses. data is loaded here and then goes to ALU/FPU
 
-- store units. access to ram or cache
+- store units. access to RAM or cache
 
-- branch predictor. predicts where the program will go at conditional branches (if, loops, comparisons). example: if (x>0) { … } else { … }. cpu tries to guess which branch will execute to preload instructions in advance and avoid stalling.
+- branch predictor. predicts where the program will go at conditional branches (if, loops, comparisons). example: if (x>0) { … } else { … }. CPU tries to guess which branch will execute to preload instructions in advance and avoid stalling.
 
-- cache memory. l1 is the smallest (up to 64kb) and fastest, located inside the core. l2 also inside the core, larger and slightly slower (up to 1mb). l3 shared across all cores. what is stored in cache: copies of frequently used data and instructions from ram.
+- cache memory. L1 is the smallest (up to 64KB) and fastest, located inside the core. L2 also inside the core, larger and slightly slower (up to 1MB). L3 shared across all cores. what is stored in cache: copies of frequently used data and instructions from RAM.
 
-- integrated gpu. not required in all processors but used almost always in modern computers. outputs image to the screen. includes shader blocks (mini-alu optimized for processing pixels/vertices/colors), media blocks, display controller (manages hdmi and screen output).
+- integrated GPU. not required in all processors but used almost always in modern computers. outputs image to the screen. includes shader blocks (mini-ALU optimized for processing pixels/vertices/colors), media blocks, display controller (manages HDMI and screen output).
 
 - controllers:
 
-imc - integrated memory controller. communicates directly with ram.
+IMC - integrated memory controller. communicates directly with RAM.
 
-pcie controller manages pcie express lanes (connection cpu ↔ gpu, ssd, network cards).
+PCIe controller manages PCIe express lanes (connection CPU ↔ GPU, SSD, network cards).
 
-dmi/upi connection with chipset and other dies.
+DMI/UPI connection with chipset and other dies.
 
-pmu monitors power consumption.
+PMU monitors power consumption.
 
-clock&pll generates clock signals and creates stable frequency.
+Clock&PLL generates clock signals and creates stable frequency.
 
-- system agent: part of the processor that unites non-compute blocks — memory controller (imc), pcie controller, graphics (igpu), l3 cache and chipset interfaces. its job is to manage interaction of these blocks and distribute data between cores, memory, graphics and peripherals.
+- system agent: part of the processor that unites non-compute blocks — memory controller (IMC), PCIe controller, graphics (iGPU), L3 cache and chipset interfaces. its job is to manage interaction of these blocks and distribute data between cores, memory, graphics and peripherals.
 
-all these blocks are made of transistors. a transistor is a tiny element that opens or closes current flow. the die itself is multilayered: bottom silicon with transistors, then many layers of metal tracks connecting them, together forming functional blocks of the cpu. the die refers to all these layers as one whole.
+all these blocks are made of transistors. a transistor is a tiny element that opens or closes current flow. the die itself is multilayered: bottom silicon with transistors, then many layers of metal tracks connecting them, together forming functional blocks of the CPU. the die refers to all these layers as one whole.
+
 ---
 
-cpu architectures may be based on either cisc (complex instruction set computer) or risc (reduced instruction set computer), on which architectures like these are built:
+CPU architectures may be based on either CISC (complex instruction set computer) or RISC (reduced instruction set computer), on which architectures like these are built:
 
-x86 - capable of executing complex commands since they have powerful processors and high performance. used in pcs, laptops, servers.
+x86 - capable of executing complex commands since they have powerful processors and high performance. used in PCs, laptops, servers.
 
-arm - minimalist instruction set, commands execute one task step by step. efficient in power consumption. used in smartphones, tablets, macbooks.
+ARM - minimalist instruction set, commands execute one task step by step. efficient in power consumption. used in smartphones, tablets, MacBooks.
 
