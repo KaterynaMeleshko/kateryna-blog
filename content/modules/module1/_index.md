@@ -5,5 +5,5 @@ type: post
 summary: "Overview & links to notes and exercises"
 ---
 Choose the section:
-- [Overview]({{< relref "./overview/" >}})
-- [Tasks]({{< relref "./tasks/" >}})
+- [Overview](/modules/module1/overview/)
+- [Tasks](/modules/module1/tasks/)

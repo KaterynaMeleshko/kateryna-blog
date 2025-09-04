@@ -4,17 +4,9 @@ summary: "Here I will post my solutions to the tasks from the module"
 date: 2025-08-15
 weight: 2
 type: page
+draft: false
 _build:
   list: never 
-
-design:
-  card:
-    shadow: true
-    border_radius: "0.5rem"
-    padding: "1rem"
-    hover_effect: lift
-    color: red
-    background_color: default
 ---
 
 
