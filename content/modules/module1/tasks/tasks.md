@@ -1,11 +1,16 @@
 ---
 title: "Exercises"
-summary: "Here i will post my solutions to the tasks from the module"
+summary: "Here I will post my solutions to the tasks from the module"
 date: 2025-08-16
 type: page
 draft: false
+_build:
+  list: never
 design:
   view: card-grid
+outputs: ["HTML"]
+slug: "tasks"
+url: "/modules/module1/tasks/"
 ---
 
 

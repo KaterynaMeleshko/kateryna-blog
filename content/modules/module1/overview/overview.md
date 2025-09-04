@@ -7,4 +7,8 @@ _build:
   list: never
 design:
   view: card-grid
+outputs: ["HTML"]
+slug: "overview"
+url: "/modules/module1/overview/"
 ---
+
