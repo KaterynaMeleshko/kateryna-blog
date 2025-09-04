@@ -1,14 +1,18 @@
 ---
 title: "Exercises"
 summary: "Here I will post my solutions to the tasks from the module"
-date: 2025-08-16
+date: 2025-08-15
+weight: 2
 type: post
-draft: false
+
 design:
-  view: card-grid
-outputs: ["HTML"]
-slug: "tasks"
-url: "/modules/module1/tasks/"
+  card:
+    shadow: true
+    border_radius: "0.5rem"
+    padding: "1rem"
+    hover_effect: lift
+    color: red
+    background_color: default
 ---
 
 
