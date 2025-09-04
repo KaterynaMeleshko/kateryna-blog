@@ -1,6 +1,6 @@
 ---
 title: "Hardware"
-summary: "Module 1"
+summary: "Tasks"
 date: 2025-08-22
 weight: 1
 type: post
