@@ -4,8 +4,8 @@ summary: "Here i will post my solutions to the tasks from the module"
 date: 2025-08-16
 type: page
 draft: false
-    design:
-      view: card-grid
+design:
+  view: card-grid
 ---
 
 

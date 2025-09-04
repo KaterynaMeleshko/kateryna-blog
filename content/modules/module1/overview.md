@@ -3,6 +3,8 @@ title: "Overview"
 date: 2025-08-16
 type: page
 draft: false
-    design:
-      view: card-grid
+_build:
+  list: never
+design:
+  view: card-grid
 ---
