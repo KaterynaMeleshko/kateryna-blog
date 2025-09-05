@@ -1,6 +1,5 @@
 ---
 title: Week 1&2
-summary: "Briefly about my first two weeks in Amanox"
 date: 2025-08-22
 featured: true
 weight: 1
@@ -17,24 +16,23 @@ design:
 
 ## Intro
 
-Hi there! Welcome to my blog.
-Here, I’ll be sharing a new update every two weeks, mainly to keep track of my goals, progress at work and in my studies, and sometimes just to drop in some general thoughts or reflections along the way.
+hi there! welcome to my blog.
+here, i’ll be sharing a new update every two weeks, mainly to keep track of my goals, progress at work and in my studies, and sometimes just to drop in some general thoughts or reflections along the way.
 
 ## Work progress
 ### Tasks
-- Get familiar with administrative and organizational matters  
-- Learn more about Amanox and what they do
-- Build a basic website for this blog  
-- Do the first subchapter of Module 1: Hardware  
+- get familiar with administrative and organizational matters  
+- learn more about Amanox and what they do
+- build a basic website for this blog  
+- do the first subchapter of Module 1: Hardware  
 
 ### Details
-I started my work on 11.08.2025. On the first day, I set up my laptop and work tools with Xavier and received an introduction from the PiBS coaches about the training and modules. Coincidentally, my first day also ended with the company’s annual barbecue, which was a nice chance to meet many colleagues. 
+i started my work on 11.08.2025. on the first day, i set up my laptop and work tools with Xavier and received an introduction from the PiBS coaches about the training and modules. coincidentally, my first day also ended with the company’s annual barbecue, which was a nice chance to meet many colleagues. 
+on thursday and friday, i worked on Module 0 which was building the blog website.  
 
-On Thursday and Friday, I worked on Module 0 which was building the blog website.  
-
-The following week, starting Wednesday, I continued with Module 1: Hardware. I studied the technical components of a computer and practiced by "assembling" a virtual PC using an online store.  
+the following week, starting wednesday, i continued with Module 1: Hardware. i studied the technical components of a computer and practiced by "assembling" a virtual PC using an online store.  
 
 ### Reflection
-I enjoyed working on the Hardware module and found the start very engaging. At the same time, I realized that I need to improve my time management. Because I was sick on Thursday, some tasks took longer than planned, and I want to create a better schedule to stay productive.  
+i enjoyed working on the Hardware module and found the start very engaging. at the same time, i realized that i need to improve my time management. because i was sick on thursday, some tasks took longer than planned, and i want to create a better schedule to stay productive.  
 
 
