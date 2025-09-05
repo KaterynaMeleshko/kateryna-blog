@@ -117,6 +117,149 @@ ARM - minimalist instruction set, commands execute one task step by step. effici
 
 ---
 
+## motherboard
+
+a motherboard is the main printed circuit board of a computer, a multilayer structure made of fiberglass-reinforced epoxy (fiberglass provides strength, resin provides insulation) with copper traces. in the layers of the board are routed: signal lines (PCIe, USB, RAM, etc.), power planes (12 v, 5 v, 3.3 v, 1.2 v, etc.), ground planes (GND). the board provides physical mounting of components and electrical connection between them.
+
+---
+
+### motherboard components:
+
+**-CPU socket**
+
+this is the connector where the CPU is installed.
+
+consists of hundreds/thousands of contact pins or pads (LGA - contacts are in the socket as in intel, PGA - contacts in the form of pins on the CPU as in amd, BGA - CPU soldered onto the board as in laptops).
+
+contacts are made of copper/gold-plated alloys for reliable connection and oxidation protection. the socket’s task is to carry hundreds of signals (power, data, addresses, clocking) between CPU and the board.
+
+**-RAM slots**
+
+long connectors with spring-loaded contacts made of copper alloy with coating (usually gold/nickel) for memory modules.
+
+DIMM (dual inline memory module) - standard for desktop PCs.
+SO-DIMM (small outline DIMM) - shortened version for laptops and mini-PCs.
+
+each slot is connected to the memory controller inside the CPU.
+
+**-chipset(PCH)**
+
+this is effectively a separate die that manages communication between CPU, RAM, storage, and peripherals.
+
+previously there were two chips:
+
+northbridge - worked with RAM and GPU.
+southbridge - worked with slower peripherals (USB, SATA, audio, network).
+
+today northbridge functions are integrated directly into the CPU via direct media interface, and only the PCH (former southbridge) remains on the board.
+
+**-PCIe slots**
+
+connectors for expansion cards: graphics cards, sound cards, network cards, capture cards, and also SSDs (PCIe format).
+
+PCIe (peripheral component interconnect express) uses lanes implemented as differential signal pairs + and -.
+
+x1 = 1 lane, x4 = 4 lanes, x16 = 16 lanes.
+
+the more lanes, the higher the bandwidth.
+
+**-storage connectors**
+
+SATA ports - for HDD and SATA SSD.
+M.2 slots - compact connectors for SSD. M.2 is a form factor (thin board), it can host either SATA SSD or NVMe SSD.
+
+NVMe (non-volatile memory express) - protocol for SSD via PCIe. provides speeds of 10+ gb/s on modern generations.
+
+VRM (voltage regulator module)
+
+converts power for CPU and RAM. turns 12 v (from PSU) into required < 1.4 v for CPU and < 1.3 v for RAM.
+
+details:
+
+volt (V) = voltage U, potential difference that “opens” transistors and pushes charge through the circuit.
+ampere (A) = current I, how many electrons flow per second.
+watt (W) = power P, how much energy per second is consumed:
+P = U × I
+
+CPU transistors operate at very low voltages (≈1 v), otherwise they would burn, since modern transistors have ultra-thin gate oxide, and high electric field strength would destroy the dielectric.
+
+at low voltage, to provide required power (watts), very high current (amperes) is needed.
+
+example: CPU = 100 W:
+
+at 12 v → 8 A
+
+at 1.2 v → 83 A
+
+that’s why VRM on the motherboard lowers 12 v to 1 v, but drastically increases the current.
+
+VRM consists of:
+
+MOSFET transistors
+MOSFET = metal-oxide-semiconductor field-effect transistor.
+it has three pins: drain, source, and gate.
+if gate receives a signal, drain and source connect and current flows; if not, the circuit is open.
+
+in VRM MOSFETs work in pairs:
+high-side connects load to +12 v,
+low-side connects it to ground.
+they switch rapidly, turning constant 12 v into high-frequency pulses.
+
+chokes (inductors)
+a choke is coil of copper wire wound on a ferrite core (ferrite is ceramic material of iron oxides, non-conductive).
+a coil resists sharp current changes:
+when MOSFET is on, current flows through coil, magnetic field builds up, storing energy;
+when MOSFET is off, coil keeps current flowing by releasing stored energy.
+
+thus pulses are smoothed.
+
+around the CPU socket there are usually dozens of capacitors of different types (ceramic, polymer) so they work at different frequencies and smooth sudden load spikes.
+
+capacitors
+a capacitor = two conductive plates separated by a dielectric (ceramic, polymer, aluminum oxide, etc.).
+its job is to store electric charge and release it quickly.
+in VRM they smooth ripples after the choke, equalizing output voltage.
+
+**-BIOS/UEFI chip**
+
+NAND/NOR flash die in a plastic package with firmware, stored in SPI flash memory, responsible for initial hardware initialization and OS boot, read directly by CPU at startup via SPI bus.
+
+**-I/O ports**
+USB, HDMI/DP, ethernet (RJ45), audio, sometimes VGA/DVI, DP, USB-C.
+
+**-fan headers**
+
+connectors for fans.
+
+**-power connectors**
+
+24-pin ATX power for the whole board
+
+4/8-pin CPU power for processor supply
+
+**-buses**
+
+a shared set of conductors that transfer data, addresses, or control signals.
+
+types:
+address bus — points to the memory cell being accessed.
+data bus — transfers the actual data.
+control bus — transfers commands (e.g., read or write).
+
+bus interfaces:
+SATA - connects storage to chipset (~600 mb/s limit).
+PCI express - modern universal bus with lanes.
+
+how it works: buses are synchronized by clock signals, devices negotiate who transmits and who receives. it’s like a shared road where different participants can drive at different times.
+
+---
+
+### form factors:
+
+ATX, micro-ATX, mini-ITX, E-ATX. the smaller the board, the fewer connectors and slots.
+
+---
+
 ## Tasks
 
 ---
