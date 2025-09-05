@@ -1,5 +1,6 @@
 ---
 title: Week 1&2
+summary: ""
 date: 2025-08-22
 featured: true
 weight: 1
@@ -33,6 +34,6 @@ on thursday and friday, i worked on Module 0 which was building the blog website
 the following week, starting wednesday, i continued with Module 1: Hardware. i studied the technical components of a computer and practiced by "assembling" a virtual PC using an online store.  
 
 ### Reflection
-i enjoyed working on the Hardware module and found the start very engaging. at the same time, i realized that i need to improve my time management. because i was sick on thursday, some tasks took longer than planned, and i want to create a better schedule to stay productive.  
+i found the start very engaging. at the same time, i realized that i need to improve my time management. because i was sick on thursday, some tasks took longer than planned, and i want to create a better schedule to stay productive.  
 
 
