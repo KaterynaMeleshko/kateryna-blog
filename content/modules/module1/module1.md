@@ -117,45 +117,45 @@ ARM - minimalist instruction set, commands execute one task step by step. effici
 
 ---
 
-# Tasks
+## Tasks
 
 ---
 
-## Hardware components
+### Hardware components
 ---
 
-#### CPU  
+##### CPU  
 the CPU is the part of the computer that executes program instructions. It performs calculations, logical operations, and controls the flow of data.  
 - modern CPUs have multiple cores, which allow them to work on several tasks at the same time.  
 - without the CPU, software cannot run.  
 
-#### Motherboard 
+##### Motherboard 
 the motherboard is the main circuit board that connects all hardware parts.  
 - components like the CPU, RAM, storage devices, GPU, and PSU are either installed directly on it or connected through it.  
 - modern motherboards often include built-in functions such as network connection, sound, and sometimes basic graphics output.  
 
-#### RAM 
+##### RAM 
 RAM is the short-term memory of the computer.  
 - it stores data and program instructions that the CPU needs immediately.  
 - RAM is much faster than storage, but it is volatile: all data is lost once the computer is powered off.  
 
-#### Storage Device  
+##### Storage Device  
 storage devices keep data permanently, even when the computer is turned off.  
 - HDD (Hard Disk Drive): uses spinning disks, cheaper and with large capacity but slower.  
 - SSD (Solid State Drive): uses flash memory, much faster and more reliable than HDDs.  
 - storage is where the operating system, applications, and personal files are saved.  
 
-#### PSU  
+##### PSU  
 the PSU takes electricity from the wall and converts it into the lower voltages required by the components.  
 - it powers the motherboard, CPU, GPU, storage, and other devices.  
 - a stable PSU is essential for the reliability of the entire system.  
 
-#### GPU  
+##### GPU  
 the GPU is specialized for rendering images, videos, and animations.  
 - it is highly efficient in parallel calculations, which makes it faster than the CPU for graphics tasks.  
 - some CPUs have integrated graphics, but dedicated GPUs are used for gaming, design, and other demanding applications.  
 
-#### Cooling  
+##### Cooling  
 all electronic parts generate heat while working. Cooling systems remove this heat to keep the components safe.  
 - air cooling: uses fans and heatsinks, the most common method.  
 - water cooling: uses liquid to transport heat away, more efficient for high-performance systems.  
@@ -163,7 +163,7 @@ all electronic parts generate heat while working. Cooling systems remove this he
 
 --- 
 
-## Advanced Questions
+### Advanced Questions
 ---
 
 <details>
@@ -203,14 +203,14 @@ all electronic parts generate heat while working. Cooling systems remove this he
 
 ---
 
-## Hypothetical machine
+### Hypothetical machine
 ---
 
 [link to the hypothetical machine components](https://www.galaxus.ch/en/shoplist/show/CfDJ8KEwk7Q9MilFpMKq1D7DsMYZHMzdi6N0nHtamDe5NRsTGKuaTQzHPAtoqvRUC12oqlu1W7KiygJGgfElHFwuULBD0t1MmHeDoXrc9kJbzqwlZGMPJg1c3iRPtvPAGZ8ZDA)
 
 ---
 
-## Bits and bytes
+### Bits and bytes
 
 <details>
   <summary>Say you have a gigabit internet connection (downstream). How many kilobytes can you download per second?​</summary>
@@ -239,4 +239,4 @@ Describe your approach in your learning-blog.​</summary>
 
 ---
 
-## Multiplication with basic instructions
+### Multiplication with basic instructions
