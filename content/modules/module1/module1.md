@@ -118,7 +118,7 @@ ARM - minimalist instruction set, commands execute one task step by step. effici
 ---
 
 
-## Motherboard
+## Motherboard
 
 a motherboard is the main printed circuit board of a computer, a multilayer structure made of fiberglass-reinforced epoxy with copper traces. in the layers of the board are routed: signal lines, power planes, GND planes. the board provides physical mounting of components and electrical connection between them.
 
@@ -258,6 +258,301 @@ how it works: buses are synchronized by clock signals, devices negotiate who tra
 ### form factors:
 
 ATX, micro-ATX, mini-ITX, E-ATX. the smaller the board, the fewer connectors and slots.
+
+---
+
+## Memory
+
+### units of memory measurement
+
+bit - the smallest unit of data: 0 or 1.
+
+byte - 8 bits.
+
+then come the "multiple units," and here is the nuance:
+
+decimal:
+
+1 KB = 1000 bytes
+
+1 MB = 1000 KB = 10^6 bytes
+
+1 GB = 10^9 bytes
+
+this is how storage manufacturers count (HDD, SSD, USB flash drives).
+
+binary:
+
+1 KIB (kibibyte) = 1024 bytes
+
+1 MIB = 1024 KIB = 2^20 bytes
+
+1 GIB = 2^30 bytes
+
+this is how operating systems and RAM manufacturers count.
+
+---
+
+### what bit storage technologies exist
+
+**- DRAM - dynamic random access memory**
+
+DRAM is volatile memory.
+
+DRAM consists of cells, each made of a transistor and a capacitor (1 cell = 1 bit). the capacitor stores a charge of 1 or 0, which quickly leaks through the transistor and dielectric.
+
+data must be constantly refreshed due to charge leakage; the memory controller located in the CPU (or formerly in the chipset) rereads and rewrites all data about every 64 ms.
+
+because of frequent refreshing it is relatively slow, but it is cheap and compact.
+
+use: main memory, video memory.
+
+**- SRAM - static random access memory**
+
+SRAM is also volatile.
+
+data does not need refreshing, it stays as long as there is power.
+
+SRAM consists of 6 transistors (to build a latch = 1 memory cell, you need two cross-coupled inverting circuits of 2 transistors each plus 2 for access). usually CMOS (complementary metal–oxide–semiconductor, technology where pairs of p- and n-channel transistors work together, reducing power consumption).
+
+the logic latch stores 0 or 1 without capacitors, so the bit is stored not as charge but as the stable state of the circuit. this is faster and more reliable, but takes more chip area.
+
+since it requires no refreshing, read/write is very fast. however, it takes more space on the die and is more expensive.
+
+used in registers, caches.
+
+**- VRAM*
+
+GDDR - graphics DDR
+GDDR is a type of DRAM with doubled/tripled data bus, optimized for parallel access from many GPU threads.
+
+HBM - high bandwidth memory
+3d: DRAM chips are stacked and connected vertically through TSV (through-silicon vias). this increases bus width (thousands of bits instead of hundreds) and reduces power consumption.
+
+difference from regular DRAM (RAM): CPU memory works with a relatively narrow bus (64–128 bits), while GPU VRAM uses a very wide one (up to thousands of bits) for parallel processing.
+
+**- NVRAM - non-volatile RAM general name for all non-volatile RAM**
+
+- NAND flash
+
+non-volatile but lifespan is limited by write/erase cycles — typically 500–1000 (QLC) up to 100k (SLC). the reason is gradual degradation of the floating gate insulator.
+
+one cell = transistor with floating gate. it has two gates: one control gate, one floating gate insulated by dielectric, where electrons can be trapped. their presence or absence changes the transistor threshold, encoding 0 or 1.
+
+can store 1, 2, 3, 4 bits per cell:
+
+SLC = 1 bit → very reliable
+
+MLC = 2 bits
+
+TLC = 3 bits
+
+QLC = 4 bits → cheap, high density, but slower and less durable
+
+cells are grouped into pages (4–16 KB), then into blocks (128–512 pages).
+
+used in SSD, USB sticks, memory cards.
+
+- MRAM - magnetoresistive RAM
+uses magnetic tunnel junction (MTJ). a cell has two ferromagnetic layers: one fixed, one free. their relative orientation (parallel or antiparallel) changes resistance, encoding 0/1.
+
+non-volatile, fast, durable, but expensive, currently used mainly in automotive electronics.
+
+- FRAM - ferroelectric RAM
+uses ferroelectric crystals (dipoles switch under electric field and retain state without power).
+
+in the cell, capacitor is replaced by ferroelectric. dipole state = 0 or 1.
+
+expensive and small capacity, but very resistant to rewrites. used mainly in medical devices or bank cards.
+
+- ROM - read only memory
+
+non-volatile, data remains without power.
+
+permanent memory programmed once or several times; after programming only reading is possible. examples: BIOS/UEFI firmware, microcontrollers in appliances, game cartridges.
+
+types (where they are used?):
+
+mask ROM - written at factory (not changeable)
+
+PROM - programmable once
+
+EPROM - erasable by ultraviolet
+
+EEPROM - electrically erasable programmable ROM
+
+flash (NAND/NOR) - modern type of EEPROM, widely used (BIOS, SSD, USB)
+
+---
+
+### functional memory hierarchy
+
+
+**- CPU registers**
+built from SRAM cells.
+fastest memory in the PC. located on the CPU die, holds data loaded into ALU or FPU.
+
+---
+
+**- CPU caches**
+also implemented with SRAM.
+L1, L2, L3 caches store frequently used data from RAM for faster CPU access. when accessing RAM, part of the data is copied into cache. if CPU requests it again, it is taken from cache (ns) instead of RAM (tens of ns).
+
+---
+
+## RAM
+
+volatile computer memory based on DRAM. it is the main working memory, where active data and program code are stored.
+
+### working principle:
+
+data in DRAM cells is organized as a matrix of rows and columns.
+
+activation (ACT): a row is opened, its contents are transferred into sense amplifiers.
+
+read/write (RD/WR): access to a specific column in the active row.
+
+precharge (PRE): array is prepared for the next access.
+
+one access cycle = ACT > RD/WR > PRE.
+
+due to charge leakage DRAM requires periodic refresh (~every 64 ms).
+
+## components:
+
+- DRAM chips
+dies made of cells (1 transistor + 1 capacitor = 1 bit).
+data stored as charge in the capacitor.
+
+- memory modules
+printed circuit boards with DRAM chips.
+
+UDIMM (unbuffered DIMM) - standard desktop modules
+
+SO-DIMM - shortened modules for laptops and small PCs
+
+RDIMM (registered DIMM) - server modules with buffer register reducing load on controller
+
+LRDIMM (load-reduced DIMM) - server modules with extended buffering
+
+- memory controller
+built into modern CPU. manages row/column access, refresh cycles, bus synchronization.
+
+- ECC (error-correcting code)
+used in server modules. adds Hamming code bits to each data block to correct single-bit errors and detect double-bit errors.
+
+---
+
+**- video memory (VRAM)**
+
+difference from normal DRAM: much wider bus + special GPU controllers for thousands of parallel threads.
+
+**- persistent storage: HDD, SSD**
+
+## HDD
+
+hard disk drive - magnetic storage device where data is stored on spinning platters.
+
+### working principle:
+
+when powered on, spindle motor spins the platters. actuator positions heads over the needed track.
+
+write: head generates a magnetic field and changes orientation of a domain (north/south = 0/1).
+
+read: head senses domain orientation and converts it to electric signal. signals are amplified, processed by controller, and sent to the PC via interface.
+
+### components:
+
+**- platters**
+made of glass, aluminum, or ceramic. coated with thin ferromagnetic layer (cobalt, nickel, platinum alloys), protective carbon top layer and lubricant. data stored as domain orientation.
+
+**- spindle and motor**
+spindle holds platters, motor spins them. controlled by driver circuit, sets RPM.
+
+**- actuator**
+moving arm that positions heads across the platter radius. driven by electromagnet for fast precise positioning.
+
+**- read/write heads**
+microscopic elements on actuator arms. write: create magnetic field, flip domains. read: use magnetoresistive effect (resistance depends on field orientation). heads float 5–10 nm above surface due to air cushion from spinning.
+
+**- head stack**
+set of arms with heads for both sides of platters.
+
+**- PCB controller**
+under the drive. includes:
+
+controller - manages motors, heads, SATA/SAS/USB interface
+
+preamps - boost weak signals from heads
+
+DRAM cache - buffers writes, holds sector translation tables
+
+**- enclosure and filters**
+
+sealed body with air or helium inside. filters trap dust/micro-particles since one speck can crash the head.
+
+---
+
+## SSD
+
+solid-state drive - electronic storage using NAND semiconductor cells, no moving parts.
+
+### working principle:
+
+write: controller receives OS command, translates to physical addresses, charges/discharges floating gates in NAND.
+
+read: controller accesses pages, checks gate state (charge/no charge) = 0/1.
+
+erase: whole block must be erased before rewriting. controller uses garbage collection and cache to mitigate delays.
+
+### components:
+
+NAND flash chips
+dies of semiconductor memory. floating gate transistors trap or release electrons: charged = 1, empty = 0. modern types store multiple bits per cell (SLC, MLC, TLC, QLC).
+NAND dies are grouped into arrays (banks, blocks, pages).
+
+**- controller**
+specialized processor managing NAND access. functions:
+
+FTL - flash translation layer, maps logical → physical addresses
+
+wear leveling - spreads writes evenly
+
+garbage collection - erases blocks for reuse
+
+ECC - error correction
+
+**- cache**
+
+DRAM cache - separate memory module for FTL tables, speeds access
+
+SLC cache - part of NAND used in 1-bit mode for fast buffering
+
+**- interface**
+
+SATA, limited to ~550 MB/s
+
+PCIe (NVMe), up to 14 GB/s (PCIe 5.0)
+connectors are copper with gold plating.
+
+**- PCB**
+multilayer board with traces for power/signals, holds all components.
+
+**- power & protection**
+
+3.3 V M.2 or 5 V SATA power
+
+server SSDs use capacitors (PLP - power loss protection) to finish writes on sudden shutdown
+
+---
+
+**- firmware ROM**
+
+chip storing BIOS/UEFI. holds low-level code and drivers to boot the PC. BIOS = old standard, UEFI = modern (graphics, GPT, drivers).
+
+**- virtual memory & swap**
+
+OS mechanism where process address space > physical RAM. when RAM is full, pages are swapped to disk (swap file/partition). adds flexibility but slow.
 
 ---
 
