@@ -9,7 +9,7 @@ draft: false
 
 # Overview PC Components
 
-## central processing unit
+## Central Processing Unit
 
 CPU - central processing unit, executes machine instructions of programs, manages memory and devices through controllers and buses
 
@@ -126,7 +126,7 @@ a motherboard is the main printed circuit board of a computer, a multilayer stru
 
 ### motherboard components:
 
-**-CPU socket**
+**- CPU socket**
 
 this is the connector where the CPU is installed.
 
@@ -134,7 +134,7 @@ consists of hundreds/thousands of contact pins or pads (LGA - contacts are in th
 
 contacts are made of copper/gold-plated alloys for reliable connection and oxidation protection. the socket’s task is to carry hundreds of signals (power, data, addresses, clocking) between CPU and the board.
 
-**-RAM slots**
+**- RAM slots**
 
 long connectors with spring-loaded contacts made of copper alloy with coating (usually gold/nickel) for memory modules.
 
@@ -143,7 +143,7 @@ SO-DIMM (small outline DIMM) - shortened version for laptops and mini-PCs.
 
 each slot is connected to the memory controller inside the CPU.
 
-**-chipset(PCH)**
+**- chipset(PCH)**
 
 this is effectively a separate die that manages communication between CPU, RAM, storage, and peripherals.
 
@@ -154,7 +154,7 @@ southbridge - worked with slower peripherals (USB, SATA, audio, network).
 
 today northbridge functions are integrated directly into the CPU via direct media interface, and only the PCH (former southbridge) remains on the board.
 
-**-PCIe slots**
+**- PCIe slots**
 
 connectors for expansion cards: graphics cards, sound cards, network cards, capture cards, and also SSDs (PCIe format).
 
@@ -164,14 +164,14 @@ x1 = 1 lane, x4 = 4 lanes, x16 = 16 lanes.
 
 the more lanes, the higher the bandwidth.
 
-**-storage connectors**
+**- storage connectors**
 
 SATA ports - for HDD and SATA SSD.
 M.2 slots - compact connectors for SSD. M.2 is a form factor (thin board), it can host either SATA SSD or NVMe SSD.
 
 NVMe (non-volatile memory express) - protocol for SSD via PCIe. provides speeds of 10+ gb/s on modern generations.
 
-VRM (voltage regulator module)
+**- VRM**
 
 converts power for CPU and RAM. turns 12 v (from PSU) into required < 1.4 v for CPU and < 1.3 v for RAM.
 
@@ -221,24 +221,24 @@ a capacitor = two conductive plates separated by a dielectric (ceramic, polymer,
 its job is to store electric charge and release it quickly.
 in VRM they smooth ripples after the choke, equalizing output voltage.
 
-**-BIOS/UEFI chip**
+**- BIOS/UEFI chip**
 
 NAND/NOR flash die in a plastic package with firmware, stored in SPI flash memory, responsible for initial hardware initialization and OS boot, read directly by CPU at startup via SPI bus.
 
-**-I/O ports**
+**- I/O ports**
 USB, HDMI/DP, ethernet (RJ45), audio, sometimes VGA/DVI, DP, USB-C.
 
-**-fan headers**
+**- fan headers**
 
 connectors for fans.
 
-**-power connectors**
+**- power connectors**
 
 24-pin ATX power for the whole board
 
 4/8-pin CPU power for processor supply
 
-**-buses**
+**- buses**
 
 a shared set of conductors that transfer data, addresses, or control signals.
 
