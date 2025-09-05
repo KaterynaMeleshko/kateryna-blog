@@ -210,9 +210,7 @@ chokes (inductors)
 a choke is coil of copper wire wound on a ferrite core (ferrite is ceramic material of iron oxides, non-conductive).
 a coil resists sharp current changes:
 when MOSFET is on, current flows through coil, magnetic field builds up, storing energy;
-when MOSFET is off, coil keeps current flowing by releasing stored energy.
-
-thus pulses are smoothed.
+when MOSFET is off, coil keeps current flowing by releasing stored energy. thus pulses are smoothed.
 
 around the CPU socket there are usually dozens of capacitors of different types (ceramic, polymer) so they work at different frequencies and smooth sudden load spikes.
 
@@ -244,7 +242,9 @@ a shared set of conductors that transfer data, addresses, or control signals.
 
 types:
 address bus — points to the memory cell being accessed.
+
 data bus — transfers the actual data.
+
 control bus — transfers commands (e.g., read or write).
 
 bus interfaces:
@@ -636,7 +636,6 @@ all electronic parts generate heat while working. Cooling systems remove this he
 ---
 
 ### Hypothetical machine
----
 
 [link to the hypothetical machine components](https://www.galaxus.ch/en/shoplist/show/CfDJ8KEwk7Q9MilFpMKq1D7DsMYZHMzdi6N0nHtamDe5NRsTGKuaTQzHPAtoqvRUC12oqlu1W7KiygJGgfElHFwuULBD0t1MmHeDoXrc9kJbzqwlZGMPJg1c3iRPtvPAGZ8ZDA)
 
@@ -671,4 +670,4 @@ Describe your approach in your learning-blog.​</summary>
 
 ---
 
-### Multiplication with basic instructions
+### More on HDDs and SSDs
