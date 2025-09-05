@@ -1,6 +1,6 @@
 ---
 title: Week 1&2
-summary: ""
+summary: " "
 date: 2025-08-22
 featured: true
 weight: 1
