@@ -1,9 +1,19 @@
 ---
 title: "Module 1"
-date: 2025-08-15
-summary: "Overview & links to notes and exercises"
----
+type: landing
 
-Choose the section:
-- [Overview](/modules/module1/overview/)
-- [Tasks](/modules/module1/tasks/)
+sections:
+  - block: collection
+    content:
+      title: "Module 1 — sections"
+      count: 2
+      filters:
+        folders:
+          - modules/module1/overview
+          - modules/module1/tasks
+        page_type: page
+      featured_only: false
+    design:
+      view: card-grid
+      columns: 2
+---
