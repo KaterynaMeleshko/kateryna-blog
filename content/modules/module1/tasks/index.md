@@ -5,8 +5,6 @@ date: 2025-08-15
 weight: 2
 type: page
 draft: false
-_build:
-  list: never 
 ---
 
 
