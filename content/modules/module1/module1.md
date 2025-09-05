@@ -1,6 +1,6 @@
 ---
-title: "Overview"
-summary: Here i will post my overview on this module along with my solutions to the tasks
+title: "Module 1"
+summary: Hardware
 date: 2025-08-15
 weight: 1
 type: page
