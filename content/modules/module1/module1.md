@@ -117,6 +117,7 @@ ARM - minimalist instruction set, commands execute one task step by step. effici
 
 ---
 
+
 ## Motherboard
 
 a motherboard is the main printed circuit board of a computer, a multilayer structure made of fiberglass-reinforced epoxy with copper traces. in the layers of the board are routed: signal lines, power planes, GND planes. the board provides physical mounting of components and electrical connection between them.
