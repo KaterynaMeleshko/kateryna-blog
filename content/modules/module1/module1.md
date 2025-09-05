@@ -25,11 +25,11 @@ it fetches instructions from memory by clock cycles, decodes them, executes them
 
 ### what physical components does it consist of?
 
-#### - lid
+**- lid**
 
 the CPU components are built so that on the very top there is a metal lid which distributes heat evenly and transfers it to the heatsink or cooler. since the processor heats up during operation, this lid is needed to avoid overheating and to protect the die from mechanical damage. usually this lid is made of copper with a nickel-plated surface so it does not oxidize.
 
-#### - thermal paste
+**- thermal paste**
 
 below the lid there is a layer of thermal paste. thermal paste is used to ensure good thermal conductivity from the die to the lid, because without it the lid may not fit tightly enough to the die. the paste fills all gaps and transfers heat to the lid across the entire surface of the die. thermal paste can be metallic or ceramic. in both cases the base is usually silicone or synthetic polymer oil because it does not evaporate and dries quickly. fillers vary:
 
@@ -37,7 +37,7 @@ for ceramic ones boron nitride, aluminum oxide, aluminum nitride are often used 
 
 in metallic fillers oxides of metals like zinc and aluminum may be used (cheap fillers, improve conductivity compared to pure oil, but worse than pure metals). in more expensive pastes silver or copper are used (silver conducts heat best, ~430 W/m·K vs ~400 for copper). in rare cases diamond dust is used (up to 2000 W/m·K).
 
-#### - die
+**- die**
 
 definitions:
 
@@ -65,7 +65,7 @@ how is the die made?
 
 first silicon is extracted. quartz sand is melted, then purified, a silicon crystal is grown. the crystal is grown in cylindrical form and then sliced into thin wafers. then dielectric, metal and conductor layers are deposited. a photosensitive layer is applied, exposed to ultraviolet light forming the pattern of future transistors, then developed so the needed structure remains. doping is done by ion implantation to change conductivity of areas. these steps are repeated many times, forming transistors and connections. then the wafer is cut into dies, tested and soldered into the package.
 
-#### - substrate
+**- substrate**
 
 after the die is manufactured it is soldered onto a green substrate which is a multilayer high-precision PCB. this acts as an adapter between the chip and the contacts that fit into the motherboard.
 
@@ -124,38 +124,38 @@ ARM - minimalist instruction set, commands execute one task step by step. effici
 ### Hardware components
 ---
 
-##### CPU  
+CPU  
 the CPU is the part of the computer that executes program instructions. It performs calculations, logical operations, and controls the flow of data.  
 - modern CPUs have multiple cores, which allow them to work on several tasks at the same time.  
 - without the CPU, software cannot run.  
 
-##### Motherboard 
+Motherboard 
 the motherboard is the main circuit board that connects all hardware parts.  
 - components like the CPU, RAM, storage devices, GPU, and PSU are either installed directly on it or connected through it.  
 - modern motherboards often include built-in functions such as network connection, sound, and sometimes basic graphics output.  
 
-##### RAM 
+RAM 
 RAM is the short-term memory of the computer.  
 - it stores data and program instructions that the CPU needs immediately.  
 - RAM is much faster than storage, but it is volatile: all data is lost once the computer is powered off.  
 
-##### Storage Device  
+Storage Device  
 storage devices keep data permanently, even when the computer is turned off.  
 - HDD (Hard Disk Drive): uses spinning disks, cheaper and with large capacity but slower.  
 - SSD (Solid State Drive): uses flash memory, much faster and more reliable than HDDs.  
 - storage is where the operating system, applications, and personal files are saved.  
 
-##### PSU  
+PSU  
 the PSU takes electricity from the wall and converts it into the lower voltages required by the components.  
 - it powers the motherboard, CPU, GPU, storage, and other devices.  
 - a stable PSU is essential for the reliability of the entire system.  
 
-##### GPU  
+GPU  
 the GPU is specialized for rendering images, videos, and animations.  
 - it is highly efficient in parallel calculations, which makes it faster than the CPU for graphics tasks.  
 - some CPUs have integrated graphics, but dedicated GPUs are used for gaming, design, and other demanding applications.  
 
-##### Cooling  
+Cooling  
 all electronic parts generate heat while working. Cooling systems remove this heat to keep the components safe.  
 - air cooling: uses fans and heatsinks, the most common method.  
 - water cooling: uses liquid to transport heat away, more efficient for high-performance systems.  
