@@ -7,555 +7,6 @@ type: page
 draft: false
 ---
 
-# Overview PC Components
-
-## Central Processing Unit
-
-CPU - central processing unit, executes machine instructions of programs, manages memory and devices through controllers and buses
-
-CPU cycle: fetch → decode → execute → write-back, works based on a clock generator
-
---- 
-
-### how does the CPU work?
-
-it fetches instructions from memory by clock cycles, decodes them, executes them through arithmetic-logic units (ALU/FPU) and stores the result back into registers or memory, while constantly managing the operation of other devices via controllers and buses.
-
----
-
-### what physical components does it consist of?
-
-**- lid**
-
-the CPU components are built so that on the very top there is a metal lid which distributes heat evenly and transfers it to the heatsink or cooler. since the processor heats up during operation, this lid is needed to avoid overheating and to protect the die from mechanical damage. usually this lid is made of copper with a nickel-plated surface so it does not oxidize.
-
-**- thermal paste**
-
-below the lid there is a layer of thermal paste. thermal paste is used to ensure good thermal conductivity from the die to the lid, because without it the lid may not fit tightly enough to the die. the paste fills all gaps and transfers heat to the lid across the entire surface of the die. thermal paste can be metallic or ceramic. in both cases the base is usually silicone or synthetic polymer oil because it does not evaporate and dries quickly. fillers vary:
-
-for ceramic ones boron nitride, aluminum oxide, aluminum nitride are often used (they are electrical insulators and do not conduct current, which makes them safe when in contact with electronic components).
-
-in metallic fillers oxides of metals like zinc and aluminum may be used (cheap fillers, improve conductivity compared to pure oil, but worse than pure metals). in more expensive pastes silver or copper are used (silver conducts heat best, ~430 W/m·K vs ~400 for copper). in rare cases diamond dust is used (up to 2000 W/m·K).
-
-**- die**
-
-definitions:
-
-wafer - thin round plate of pure silicon on which hundreds of processor or memory circuits are made
-
-dies - when circuits are patterned on the wafer, it is cut into dies, each block is a separate die containing all transistors and microcircuits
-
-chip - after the die is ready it is packaged into a protective case, contacts are soldered, heatspreader is attached
-
-the CPU die is a thin plate of silicon (a few hundred microns), where transistors and multilayer metal interconnections separated by dielectrics are formed by photolithography. thin top layers are used for local connections, thick bottom ones for power and clock signals.
-
-silicon (Si) - a chemical element that is a semiconductor, depending on doping can act as conductor or insulator.
-
-doping - adding a very small amount of another element, about one atom per million. impurities create extra electrons or holes. as a result, the main element (silicon, 4 outer electrons) can become:
-
-n-type (electron conductor) impurity of phosphorus or other elements with 5 electrons on the outer shell. one extra electron is free → moves easily → creates free electrons = conductivity.
-
-p-type (hole conductor) impurity of boron/aluminum or any element with 3 outer electrons. when they replace a silicon atom (with 4), a hole appears — a place where an electron can jump. these holes move through the crystal and also create conductivity.
-
-insulator - pure silicon without impurities, electrons remain fixed.
-
-modern processors are manufactured using CMOS technology, which combines n-type and p-type transistors in each logic circuit. this allows building basic logic elements with minimal power consumption: current flows only during switching, not in static state. controlling current through the transistor channel (gate opens or closes the path for electrons) allows forming logic elements such as AND, OR, NOT.
-
-how is the die made?
-
-first silicon is extracted. quartz sand is melted, then purified, a silicon crystal is grown. the crystal is grown in cylindrical form and then sliced into thin wafers. then dielectric, metal and conductor layers are deposited. a photosensitive layer is applied, exposed to ultraviolet light forming the pattern of future transistors, then developed so the needed structure remains. doping is done by ion implantation to change conductivity of areas. these steps are repeated many times, forming transistors and connections. then the wafer is cut into dies, tested and soldered into the package.
-
-**- substrate**
-
-after the die is manufactured it is soldered onto a green substrate which is a multilayer high-precision PCB. this acts as an adapter between the chip and the contacts that fit into the motherboard.
-
----
-
-### what blocks does the CPU have?
-
-(CPU cycle: fetch → decode → execute → write-back)
-
-- frontend. loads and decodes instructions (former CU - control unit)
-
-- ALU. integer calculations
-
-- FPU or vector unit. works with floating point numbers and vectors
-
-- register file. the fastest memory unit in the PC, very small, stores only numbers for addition and memory addresses. data is loaded here and then goes to ALU/FPU
-
-- store units. access to RAM or cache
-
-- branch predictor. predicts where the program will go at conditional branches (if, loops, comparisons). example: if (x>0) { … } else { … }. CPU tries to guess which branch will execute to preload instructions in advance and avoid stalling.
-
-- cache memory. L1 is the smallest (up to 64KB) and fastest, located inside the core. L2 also inside the core, larger and slightly slower (up to 1MB). L3 shared across all cores. what is stored in cache: copies of frequently used data and instructions from RAM.
-
-- integrated GPU. not required in all processors but used almost always in modern computers. outputs image to the screen. includes shader blocks (mini-ALU optimized for processing pixels/vertices/colors), media blocks, display controller (manages HDMI and screen output).
-
-- controllers:
-
-IMC - integrated memory controller. communicates directly with RAM.
-
-PCIe controller manages PCIe express lanes (connection CPU ↔ GPU, SSD, network cards).
-
-DMI/UPI connection with chipset and other dies.
-
-PMU monitors power consumption.
-
-Clock&PLL generates clock signals and creates stable frequency.
-
-- system agent: part of the processor that unites non-compute blocks — memory controller (IMC), PCIe controller, graphics (iGPU), L3 cache and chipset interfaces. its job is to manage interaction of these blocks and distribute data between cores, memory, graphics and peripherals.
-
-all these blocks are made of transistors. a transistor is a tiny element that opens or closes current flow. the die itself is multilayered: bottom silicon with transistors, then many layers of metal tracks connecting them, together forming functional blocks of the CPU. the die refers to all these layers as one whole.
-
----
-
-CPU architectures may be based on either CISC (complex instruction set computer) or RISC (reduced instruction set computer), on which architectures like these are built:
-
-x86 - capable of executing complex commands since they have powerful processors and high performance. used in PCs, laptops, servers.
-
-ARM - minimalist instruction set, commands execute one task step by step. efficient in power consumption. used in smartphones, tablets, MacBooks.
-
----
-
-
-## Motherboard
-
-a motherboard is the main printed circuit board of a computer, a multilayer structure made of fiberglass-reinforced epoxy with copper traces. in the layers of the board are routed: signal lines, power planes, GND planes. the board provides physical mounting of components and electrical connection between them.
-
----
-
-### motherboard components:
-
-**- CPU socket**
-
-this is the connector where the CPU is installed.
-
-consists of hundreds/thousands of contact pins or pads (LGA - contacts are in the socket as in intel, PGA - contacts in the form of pins on the CPU as in amd, BGA - CPU soldered onto the board as in laptops).
-
-contacts are made of copper/gold-plated alloys for reliable connection and oxidation protection. the socket’s task is to carry hundreds of signals (power, data, addresses, clocking) between CPU and the board.
-
-**- RAM slots**
-
-long connectors with spring-loaded contacts made of copper alloy with coating (usually gold/nickel) for memory modules.
-
-DIMM (dual inline memory module) - standard for desktop PCs.
-SO-DIMM (small outline DIMM) - shortened version for laptops and mini-PCs.
-
-each slot is connected to the memory controller inside the CPU.
-
-**- chipset(PCH)**
-
-this is effectively a separate die that manages communication between CPU, RAM, storage, and peripherals.
-
-previously there were two chips:
-
-northbridge - worked with RAM and GPU.
-southbridge - worked with slower peripherals (USB, SATA, audio, network).
-
-today northbridge functions are integrated directly into the CPU via direct media interface, and only the PCH (former southbridge) remains on the board.
-
-**- PCIe slots**
-
-connectors for expansion cards: graphics cards, sound cards, network cards, capture cards, and also SSDs (PCIe format).
-
-PCIe (peripheral component interconnect express) uses lanes implemented as differential signal pairs + and -.
-
-x1 = 1 lane, x4 = 4 lanes, x16 = 16 lanes.
-
-the more lanes, the higher the bandwidth.
-
-**- storage connectors**
-
-SATA ports - for HDD and SATA SSD.
-M.2 slots - compact connectors for SSD. M.2 is a form factor (thin board), it can host either SATA SSD or NVMe SSD.
-
-NVMe (non-volatile memory express) - protocol for SSD via PCIe. provides speeds of 10+ gb/s on modern generations.
-
-**- VRM**
-
-converts power for CPU and RAM. turns 12 v (from PSU) into required < 1.4 v for CPU and < 1.3 v for RAM.
-
-details:
-
-volt (V) = voltage U, potential difference that “opens” transistors and pushes charge through the circuit.
-ampere (A) = current I, how many electrons flow per second.
-watt (W) = power P, how much energy per second is consumed:
-P = U × I
-
-CPU transistors operate at very low voltages (≈1 v), otherwise they would burn, since modern transistors have ultra-thin gate oxide, and high electric field strength would destroy the dielectric.
-
-at low voltage, to provide required power (watts), very high current (amperes) is needed.
-
-example: CPU = 100 W:
-
-at 12 v → 8 A
-
-at 1.2 v → 83 A
-
-that’s why VRM on the motherboard lowers 12 v to 1 v, but drastically increases the current.
-
-VRM consists of:
-
-MOSFET transistors
-MOSFET = metal-oxide-semiconductor field-effect transistor.
-it has three pins: drain, source, and gate.
-if gate receives a signal, drain and source connect and current flows; if not, the circuit is open.
-
-in VRM MOSFETs work in pairs:
-high-side connects load to +12 v,
-low-side connects it to ground.
-they switch rapidly, turning constant 12 v into high-frequency pulses.
-
-chokes (inductors)
-a choke is coil of copper wire wound on a ferrite core (ferrite is ceramic material of iron oxides, non-conductive).
-a coil resists sharp current changes:
-when MOSFET is on, current flows through coil, magnetic field builds up, storing energy;
-when MOSFET is off, coil keeps current flowing by releasing stored energy. thus pulses are smoothed.
-
-around the CPU socket there are usually dozens of capacitors of different types (ceramic, polymer) so they work at different frequencies and smooth sudden load spikes.
-
-capacitors
-a capacitor = two conductive plates separated by a dielectric (ceramic, polymer, aluminum oxide, etc.).
-its job is to store electric charge and release it quickly.
-in VRM they smooth ripples after the choke, equalizing output voltage.
-
-**- BIOS/UEFI chip**
-
-NAND/NOR flash die in a plastic package with firmware, stored in SPI flash memory, responsible for initial hardware initialization and OS boot, read directly by CPU at startup via SPI bus.
-
-**- I/O ports**
-USB, HDMI/DP, ethernet (RJ45), audio, sometimes VGA/DVI, DP, USB-C.
-
-**- fan headers**
-
-connectors for fans.
-
-**- power connectors**
-
-24-pin ATX power for the whole board
-
-4/8-pin CPU power for processor supply
-
-**- buses**
-
-a shared set of conductors that transfer data, addresses, or control signals.
-
-types:
-address bus — points to the memory cell being accessed.
-
-data bus — transfers the actual data.
-
-control bus — transfers commands (e.g., read or write).
-
-bus interfaces:
-SATA - connects storage to chipset (~600 mb/s limit).
-PCI express - modern universal bus with lanes.
-
-how it works: buses are synchronized by clock signals, devices negotiate who transmits and who receives. it’s like a shared road where different participants can drive at different times.
-
----
-
-### form factors:
-
-ATX, micro-ATX, mini-ITX, E-ATX. the smaller the board, the fewer connectors and slots.
-
----
-
-## Memory
-
-### units of memory measurement
-
-bit - the smallest unit of data: 0 or 1.
-
-byte - 8 bits.
-
-then come the "multiple units," and here is the nuance:
-
-decimal:
-
-1 KB = 1000 bytes
-
-1 MB = 1000 KB = 10^6 bytes
-
-1 GB = 10^9 bytes
-
-this is how storage manufacturers count (HDD, SSD, USB flash drives).
-
-binary:
-
-1 KIB (kibibyte) = 1024 bytes
-
-1 MIB = 1024 KIB = 2^20 bytes
-
-1 GIB = 2^30 bytes
-
-this is how operating systems and RAM manufacturers count.
-
----
-
-### what bit storage technologies exist
-
-**- DRAM - dynamic random access memory**
-
-DRAM is volatile memory.
-
-DRAM consists of cells, each made of a transistor and a capacitor (1 cell = 1 bit). the capacitor stores a charge of 1 or 0, which quickly leaks through the transistor and dielectric.
-
-data must be constantly refreshed due to charge leakage; the memory controller located in the CPU (or formerly in the chipset) rereads and rewrites all data about every 64 ms.
-
-because of frequent refreshing it is relatively slow, but it is cheap and compact.
-
-use: main memory, video memory.
-
-**- SRAM - static random access memory**
-
-SRAM is also volatile.
-
-data does not need refreshing, it stays as long as there is power.
-
-SRAM consists of 6 transistors (to build a latch = 1 memory cell, you need two cross-coupled inverting circuits of 2 transistors each plus 2 for access). usually CMOS (complementary metal–oxide–semiconductor, technology where pairs of p- and n-channel transistors work together, reducing power consumption).
-
-the logic latch stores 0 or 1 without capacitors, so the bit is stored not as charge but as the stable state of the circuit. this is faster and more reliable, but takes more chip area.
-
-since it requires no refreshing, read/write is very fast. however, it takes more space on the die and is more expensive.
-
-used in registers, caches.
-
-**- VRAM*
-
-GDDR - graphics DDR
-GDDR is a type of DRAM with doubled/tripled data bus, optimized for parallel access from many GPU threads.
-
-HBM - high bandwidth memory
-3d: DRAM chips are stacked and connected vertically through TSV (through-silicon vias). this increases bus width (thousands of bits instead of hundreds) and reduces power consumption.
-
-difference from regular DRAM (RAM): CPU memory works with a relatively narrow bus (64–128 bits), while GPU VRAM uses a very wide one (up to thousands of bits) for parallel processing.
-
-**- NVRAM - non-volatile RAM general name for all non-volatile RAM**
-
-- NAND flash
-
-non-volatile but lifespan is limited by write/erase cycles — typically 500–1000 (QLC) up to 100k (SLC). the reason is gradual degradation of the floating gate insulator.
-
-one cell = transistor with floating gate. it has two gates: one control gate, one floating gate insulated by dielectric, where electrons can be trapped. their presence or absence changes the transistor threshold, encoding 0 or 1.
-
-can store 1, 2, 3, 4 bits per cell:
-
-SLC = 1 bit → very reliable
-
-MLC = 2 bits
-
-TLC = 3 bits
-
-QLC = 4 bits → cheap, high density, but slower and less durable
-
-cells are grouped into pages (4–16 KB), then into blocks (128–512 pages).
-
-used in SSD, USB sticks, memory cards.
-
-- MRAM - magnetoresistive RAM
-uses magnetic tunnel junction (MTJ). a cell has two ferromagnetic layers: one fixed, one free. their relative orientation (parallel or antiparallel) changes resistance, encoding 0/1.
-
-non-volatile, fast, durable, but expensive, currently used mainly in automotive electronics.
-
-- FRAM - ferroelectric RAM
-uses ferroelectric crystals (dipoles switch under electric field and retain state without power).
-
-in the cell, capacitor is replaced by ferroelectric. dipole state = 0 or 1.
-
-expensive and small capacity, but very resistant to rewrites. used mainly in medical devices or bank cards.
-
-- ROM - read only memory
-
-non-volatile, data remains without power.
-
-permanent memory programmed once or several times; after programming only reading is possible. examples: BIOS/UEFI firmware, microcontrollers in appliances, game cartridges.
-
-types (where they are used?):
-
-mask ROM - written at factory (not changeable)
-
-PROM - programmable once
-
-EPROM - erasable by ultraviolet
-
-EEPROM - electrically erasable programmable ROM
-
-flash (NAND/NOR) - modern type of EEPROM, widely used (BIOS, SSD, USB)
-
----
-
-### functional memory hierarchy
-
-
-**- CPU registers**
-built from SRAM cells.
-fastest memory in the PC. located on the CPU die, holds data loaded into ALU or FPU.
-
----
-
-**- CPU caches**
-also implemented with SRAM.
-L1, L2, L3 caches store frequently used data from RAM for faster CPU access. when accessing RAM, part of the data is copied into cache. if CPU requests it again, it is taken from cache (ns) instead of RAM (tens of ns).
-
----
-
-## RAM
-
-volatile computer memory based on DRAM. it is the main working memory, where active data and program code are stored.
-
-### working principle:
-
-data in DRAM cells is organized as a matrix of rows and columns.
-
-activation (ACT): a row is opened, its contents are transferred into sense amplifiers.
-
-read/write (RD/WR): access to a specific column in the active row.
-
-precharge (PRE): array is prepared for the next access.
-
-one access cycle = ACT > RD/WR > PRE.
-
-due to charge leakage DRAM requires periodic refresh (~every 64 ms).
-
-## components:
-
-- DRAM chips
-dies made of cells (1 transistor + 1 capacitor = 1 bit).
-data stored as charge in the capacitor.
-
-- memory modules
-printed circuit boards with DRAM chips.
-
-UDIMM (unbuffered DIMM) - standard desktop modules
-
-SO-DIMM - shortened modules for laptops and small PCs
-
-RDIMM (registered DIMM) - server modules with buffer register reducing load on controller
-
-LRDIMM (load-reduced DIMM) - server modules with extended buffering
-
-- memory controller
-built into modern CPU. manages row/column access, refresh cycles, bus synchronization.
-
-- ECC (error-correcting code)
-used in server modules. adds Hamming code bits to each data block to correct single-bit errors and detect double-bit errors.
-
----
-
-**- video memory (VRAM)**
-
-difference from normal DRAM: much wider bus + special GPU controllers for thousands of parallel threads.
-
-**- persistent storage: HDD, SSD**
-
-## HDD
-
-hard disk drive - magnetic storage device where data is stored on spinning platters.
-
-### working principle:
-
-when powered on, spindle motor spins the platters. actuator positions heads over the needed track.
-
-write: head generates a magnetic field and changes orientation of a domain (north/south = 0/1).
-
-read: head senses domain orientation and converts it to electric signal. signals are amplified, processed by controller, and sent to the PC via interface.
-
-### components:
-
-**- platters**
-made of glass, aluminum, or ceramic. coated with thin ferromagnetic layer (cobalt, nickel, platinum alloys), protective carbon top layer and lubricant. data stored as domain orientation.
-
-**- spindle and motor**
-spindle holds platters, motor spins them. controlled by driver circuit, sets RPM.
-
-**- actuator**
-moving arm that positions heads across the platter radius. driven by electromagnet for fast precise positioning.
-
-**- read/write heads**
-microscopic elements on actuator arms. write: create magnetic field, flip domains. read: use magnetoresistive effect (resistance depends on field orientation). heads float 5–10 nm above surface due to air cushion from spinning.
-
-**- head stack**
-set of arms with heads for both sides of platters.
-
-**- PCB controller**
-under the drive. includes:
-
-controller - manages motors, heads, SATA/SAS/USB interface
-
-preamps - boost weak signals from heads
-
-DRAM cache - buffers writes, holds sector translation tables
-
-**- enclosure and filters**
-
-sealed body with air or helium inside. filters trap dust/micro-particles since one speck can crash the head.
-
----
-
-## SSD
-
-solid-state drive - electronic storage using NAND semiconductor cells, no moving parts.
-
-### working principle:
-
-write: controller receives OS command, translates to physical addresses, charges/discharges floating gates in NAND.
-
-read: controller accesses pages, checks gate state (charge/no charge) = 0/1.
-
-erase: whole block must be erased before rewriting. controller uses garbage collection and cache to mitigate delays.
-
-### components:
-
-NAND flash chips
-dies of semiconductor memory. floating gate transistors trap or release electrons: charged = 1, empty = 0. modern types store multiple bits per cell (SLC, MLC, TLC, QLC).
-NAND dies are grouped into arrays (banks, blocks, pages).
-
-**- controller**
-specialized processor managing NAND access. functions:
-
-FTL - flash translation layer, maps logical → physical addresses
-
-wear leveling - spreads writes evenly
-
-garbage collection - erases blocks for reuse
-
-ECC - error correction
-
-**- cache**
-
-DRAM cache - separate memory module for FTL tables, speeds access
-
-SLC cache - part of NAND used in 1-bit mode for fast buffering
-
-**- interface**
-
-SATA, limited to ~550 MB/s
-
-PCIe (NVMe), up to 14 GB/s (PCIe 5.0)
-connectors are copper with gold plating.
-
-**- PCB**
-multilayer board with traces for power/signals, holds all components.
-
-**- power & protection**
-
-3.3 V M.2 or 5 V SATA power
-
-server SSDs use capacitors (PLP - power loss protection) to finish writes on sudden shutdown
-
----
-
-**- firmware ROM**
-
-chip storing BIOS/UEFI. holds low-level code and drivers to boot the PC. BIOS = old standard, UEFI = modern (graphics, GPT, drivers).
-
-**- virtual memory & swap**
-
-OS mechanism where process address space > physical RAM. when RAM is full, pages are swapped to disk (swap file/partition). adds flexibility but slow.
-
----
-
 ## Tasks
 
 ---
@@ -671,3 +122,109 @@ Describe your approach in your learning-blog.​</summary>
 ---
 
 ### More on HDDs and SSDs
+
+If you ever shopped for HDDs, you probably stumbled across multiple flavors. For example, consumer-grade, NAS-grade and server-grade. ​
+
+What are the differences between those grades?​
+
+- consumer HDD which is made for normal PCs, cheap but not built for 24/7
+- NAS HDD which is designed for network storage, optimized for multiple drives running all the time, better vibration protection
+- server or enterprise HDD is very reliable, can run 24/7 under heavy load, long warranty, but much more expensive
+
+Are there grades/tiers for SSDs? ​
+
+- consumer SSD which is SATA or NVMe, fast but not built for extreme workloads
+- enterprise SSD has higher endurance, power loss protection, stable speed which is better for servers
+
+Search the web for 2 HDDs and SSDs that you would use in a consumer PC or server (1 for each use case)
+
+- ​consumer pc:
+HDD: western digital blue 2tb
+SSD: samsung 970 evo plus 1tb
+- server:
+HDD: seagate exos x18 18tb
+SSD: samsung pm9a3 3.84tb
+
+---
+
+### Desired interfaces
+
+What are your desired interfaces in a consumer PC/laptop?​
+
+- consumer pc/laptop:
+USB-C with charging and video out
+USB-A ports for mouse, keyboard, headset
+DP for external monitor
+WI-FI 6/7 and BLUETOOTH
+M.2 NVME slot for fast SSD
+SATA for extra drives
+AUDIO JACK for headphones
+
+- server:
+BMC/IPMI for remote management
+MGMT NIC (RJ-45) for that management
+high-speed network ports: 10/25/40/100 GBE with SFP+ or QSFP modules
+FRONT BAYS with SAS/SATA/NVME drives for storage
+RAID controller for reliability
+REDUNDANT PSU
+
+---
+
+### Pros and Cons of display technologies
+
+Why did manufacturers ditch the CRT and plasma technologies?​
+
+- CRT cos its too heavy, too deep, uses lots of power, not good for high resolution
+- Plasma had better picture than CRT, but still very hot, power hungry, had risk of burn-in and was expensive to make
+
+What are the pros and cons of LCD and OLED compared to eachother?
+
+- LCD:
+pros: cheaper, bright, long lifespan, no burn-in
+cons: weaker contrast, slower response, viewing angles not perfect
+
+- OLED:
+pros: good contrast, better colors, fast response, flexible panels possible
+cons: can burn-in over time, not as bright on large screens, usually more expensive
+
+---
+
+### Office workplace​
+
+Create a list of IT-components needed to setup an office workplace (without furniture). ​​How should the PC perform? Did you choose a laptop or a workstation?​
+
+- main pc:
+i would choose a laptop like windows or mac, it is flexible cos i can work in the office, at home or on the move. performance should be good enough for office apps, programming, video calls, etc so a modern cpu, 16 gb RAM and a fast NVMe SSD are enough
+peripherals in office:
+dock station: connects laptop to everything with one usb-c cable
+external monitor
+keyboard + mouse
+headset with microphone for calls
+network: stable connection via ethernet but also wifi 6
+printer/scanner shared in the office network
+
+What interfaces do you need?
+
+usb-c/thunderbolt for docking, charging, external monitor
+rj-45 ethernet
+audio jack or bluetooth for headset
+
+Is an upgrade possible down the road?
+
+with a laptop upgrades are limited, usually only RAM and SSD can be changed, but in the office i can upgrade peripherals easily like bigger monitors, better dock, new headset, faster network, etc. the system stays flexible because the laptop connects to all devices through the dock
+
+---
+
+### Are you a fan of airflow?​
+
+What metric should be high for a fan on a heatsink?
+
+- for a cpu or gpu heatsink you want static pressure to be high, this means the fan can push air strongly through the dense fins of the cooler
+
+What metric should be high for a case fan?​
+
+- for case fans you want airflow to be high, the goal is to move as much air as possible through the case to refresh the inside with cooler outside air
+
+Why do servers often use small fans instead of bigger ones?​
+
+- ervers use small high-rpm fans because racks are very tight and airflow paths are narrow, small fans can spin faster, create strong pressure, and keep air moving straight front-to-back through the chassis. they are very loud, but in datacenters noise doesn’t really matter
